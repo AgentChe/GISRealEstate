@@ -76,8 +76,7 @@ private extension SplashViewController {
             }
             present(vc, animated: true)
         case .main:
-            break // TODO
-           //  window.rootViewController = MainViewController.make(requestReview: false)
+             window.rootViewController = MapViewController.make(requestReview: false)
         }
     }
     

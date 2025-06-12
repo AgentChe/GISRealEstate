@@ -85,11 +85,26 @@
 		DEBFBB1E2DF9A2DE00927EF6 /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB1D2DF9A2DE00927EF6 /* PageInfo.swift */; };
 		DEBFBB202DF9A30100927EF6 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB1F2DF9A30100927EF6 /* Page.swift */; };
 		DEBFBB222DF9A31100927EF6 /* RealtyHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB212DF9A31100927EF6 /* RealtyHistoryItem.swift */; };
-		DEBFBB242DF9A35100927EF6 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB232DF9A35100927EF6 /* Coordinates.swift */; };
+		DEBFBB242DF9A35100927EF6 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB232DF9A35100927EF6 /* Coordinate.swift */; };
 		DEBFBB272DF9A48800927EF6 /* GetRealtyHistoryItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB262DF9A48800927EF6 /* GetRealtyHistoryItemsRequest.swift */; };
 		DEBFBB292DF9A4C900927EF6 /* RealtyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB282DF9A4C900927EF6 /* RealtyManager.swift */; };
 		DEBFBB2B2DF9A59800927EF6 /* RealtySearchResultSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB2A2DF9A59800927EF6 /* RealtySearchResultSection.swift */; };
 		DEBFBB2D2DF9A89200927EF6 /* SearchRealtyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB2C2DF9A89200927EF6 /* SearchRealtyRequest.swift */; };
+		DEBFBB312DF9AEEC00927EF6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB302DF9AEEC00927EF6 /* MapViewController.swift */; };
+		DEBFBB332DF9AEF600927EF6 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB322DF9AEF600927EF6 /* MapViewModel.swift */; };
+		DEBFBB352DF9AEFD00927EF6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB342DF9AEFD00927EF6 /* MapView.swift */; };
+		DEBFBB382DF9B6E500927EF6 /* LocationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB372DF9B6E500927EF6 /* LocationQuery.swift */; };
+		DEBFBB3B2DF9BE5200927EF6 /* MapSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB3A2DF9BE5200927EF6 /* MapSearchField.swift */; };
+		DEBFBB3E2DF9C45600927EF6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB3D2DF9C45600927EF6 /* SettingsViewController.swift */; };
+		DEBFBB402DF9C45B00927EF6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB3F2DF9C45B00927EF6 /* SettingsViewModel.swift */; };
+		DEBFBB422DF9C45F00927EF6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB412DF9C45F00927EF6 /* SettingsView.swift */; };
+		DEBFBB462DF9DCCF00927EF6 /* RealtyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB452DF9DCCF00927EF6 /* RealtyViewController.swift */; };
+		DEBFBB482DF9DCD300927EF6 /* RealtyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB472DF9DCD300927EF6 /* RealtyViewModel.swift */; };
+		DEBFBB4A2DF9DCD800927EF6 /* RealtyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB492DF9DCD800927EF6 /* RealtyView.swift */; };
+		DEBFBB4E2DF9E72500927EF6 /* RealtyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB4D2DF9E72500927EF6 /* RealtyTableView.swift */; };
+		DEBFBB502DF9E73700927EF6 /* RealtyTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB4F2DF9E73700927EF6 /* RealtyTableElement.swift */; };
+		DEBFBB532DF9E74800927EF6 /* RealtyTableTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB522DF9E74800927EF6 /* RealtyTableTitleCell.swift */; };
+		DEBFBB552DF9E7AE00927EF6 /* RealtyTableItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB542DF9E7AE00927EF6 /* RealtyTableItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,11 +189,26 @@
 		DEBFBB1D2DF9A2DE00927EF6 /* PageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
 		DEBFBB1F2DF9A30100927EF6 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		DEBFBB212DF9A31100927EF6 /* RealtyHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyHistoryItem.swift; sourceTree = "<group>"; };
-		DEBFBB232DF9A35100927EF6 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		DEBFBB232DF9A35100927EF6 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		DEBFBB262DF9A48800927EF6 /* GetRealtyHistoryItemsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRealtyHistoryItemsRequest.swift; sourceTree = "<group>"; };
 		DEBFBB282DF9A4C900927EF6 /* RealtyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyManager.swift; sourceTree = "<group>"; };
 		DEBFBB2A2DF9A59800927EF6 /* RealtySearchResultSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtySearchResultSection.swift; sourceTree = "<group>"; };
 		DEBFBB2C2DF9A89200927EF6 /* SearchRealtyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRealtyRequest.swift; sourceTree = "<group>"; };
+		DEBFBB302DF9AEEC00927EF6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DEBFBB322DF9AEF600927EF6 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		DEBFBB342DF9AEFD00927EF6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DEBFBB372DF9B6E500927EF6 /* LocationQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationQuery.swift; sourceTree = "<group>"; };
+		DEBFBB3A2DF9BE5200927EF6 /* MapSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchField.swift; sourceTree = "<group>"; };
+		DEBFBB3D2DF9C45600927EF6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DEBFBB3F2DF9C45B00927EF6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		DEBFBB412DF9C45F00927EF6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DEBFBB452DF9DCCF00927EF6 /* RealtyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyViewController.swift; sourceTree = "<group>"; };
+		DEBFBB472DF9DCD300927EF6 /* RealtyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyViewModel.swift; sourceTree = "<group>"; };
+		DEBFBB492DF9DCD800927EF6 /* RealtyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyView.swift; sourceTree = "<group>"; };
+		DEBFBB4D2DF9E72500927EF6 /* RealtyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyTableView.swift; sourceTree = "<group>"; };
+		DEBFBB4F2DF9E73700927EF6 /* RealtyTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyTableElement.swift; sourceTree = "<group>"; };
+		DEBFBB522DF9E74800927EF6 /* RealtyTableTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyTableTitleCell.swift; sourceTree = "<group>"; };
+		DEBFBB542DF9E7AE00927EF6 /* RealtyTableItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyTableItemCell.swift; sourceTree = "<group>"; };
 		E1D6228864C896E513BFD11C /* Pods-GISRealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GISRealEstate.release.xcconfig"; path = "Target Support Files/Pods-GISRealEstate/Pods-GISRealEstate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -417,6 +447,8 @@
 		DEBFB9B22DF975B100927EF6 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				DEBFBB432DF9DCBA00927EF6 /* Realty */,
+				DEBFBB2E2DF9AEBD00927EF6 /* Main */,
 				DEBFB9A82DF975B100927EF6 /* Paygate */,
 				DEBFB9AE2DF975B100927EF6 /* Splash */,
 				DEBFB9B12DF975B100927EF6 /* TryAgain */,
@@ -559,7 +591,7 @@
 			children = (
 				DEBFBB1D2DF9A2DE00927EF6 /* PageInfo.swift */,
 				DEBFBB1F2DF9A30100927EF6 /* Page.swift */,
-				DEBFBB232DF9A35100927EF6 /* Coordinates.swift */,
+				DEBFBB232DF9A35100927EF6 /* Coordinate.swift */,
 				DEBFBB212DF9A31100927EF6 /* RealtyHistoryItem.swift */,
 				DEBFBB2A2DF9A59800927EF6 /* RealtySearchResultSection.swift */,
 			);
@@ -573,6 +605,99 @@
 				DEBFBB2C2DF9A89200927EF6 /* SearchRealtyRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		DEBFBB2E2DF9AEBD00927EF6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB3C2DF9C44C00927EF6 /* Settings */,
+				DEBFBB2F2DF9AEC100927EF6 /* Map */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DEBFBB2F2DF9AEC100927EF6 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB392DF9BD8F00927EF6 /* Views */,
+				DEBFBB362DF9B6C900927EF6 /* Utils */,
+				DEBFBB302DF9AEEC00927EF6 /* MapViewController.swift */,
+				DEBFBB322DF9AEF600927EF6 /* MapViewModel.swift */,
+				DEBFBB342DF9AEFD00927EF6 /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		DEBFBB362DF9B6C900927EF6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB372DF9B6E500927EF6 /* LocationQuery.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DEBFBB392DF9BD8F00927EF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB3A2DF9BE5200927EF6 /* MapSearchField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEBFBB3C2DF9C44C00927EF6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB3D2DF9C45600927EF6 /* SettingsViewController.swift */,
+				DEBFBB3F2DF9C45B00927EF6 /* SettingsViewModel.swift */,
+				DEBFBB412DF9C45F00927EF6 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DEBFBB432DF9DCBA00927EF6 /* Realty */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB442DF9DCC500927EF6 /* Realty */,
+			);
+			path = Realty;
+			sourceTree = "<group>";
+		};
+		DEBFBB442DF9DCC500927EF6 /* Realty */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB4B2DF9E6C800927EF6 /* Views */,
+				DEBFBB452DF9DCCF00927EF6 /* RealtyViewController.swift */,
+				DEBFBB472DF9DCD300927EF6 /* RealtyViewModel.swift */,
+				DEBFBB492DF9DCD800927EF6 /* RealtyView.swift */,
+			);
+			path = Realty;
+			sourceTree = "<group>";
+		};
+		DEBFBB4B2DF9E6C800927EF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB4C2DF9E71A00927EF6 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEBFBB4C2DF9E71A00927EF6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB512DF9E73C00927EF6 /* Cells */,
+				DEBFBB4D2DF9E72500927EF6 /* RealtyTableView.swift */,
+				DEBFBB4F2DF9E73700927EF6 /* RealtyTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DEBFBB512DF9E73C00927EF6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFBB522DF9E74800927EF6 /* RealtyTableTitleCell.swift */,
+				DEBFBB542DF9E7AE00927EF6 /* RealtyTableItemCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		E85F8A420B1891E0197C8398 /* Frameworks */ = {
@@ -710,10 +835,12 @@
 				DEBFBA0E2DF975B200927EF6 /* PaygateBestOfferView.swift in Sources */,
 				DEBFBA132DF975B200927EF6 /* IAPProduct.swift in Sources */,
 				DEBFBA172DF975B200927EF6 /* SessionManager.swift in Sources */,
+				DEBFBB4E2DF9E72500927EF6 /* RealtyTableView.swift in Sources */,
 				DEBFBA1A2DF975B200927EF6 /* TapAreaButton.swift in Sources */,
 				DEBFBA1C2DF975B200927EF6 /* GradientView.swift in Sources */,
 				DEBFBA1E2DF975B200927EF6 /* RequestResult.swift in Sources */,
 				DEBFBA212DF975B200927EF6 /* SceneDelegate.swift in Sources */,
+				DEBFBB312DF9AEEC00927EF6 /* MapViewController.swift in Sources */,
 				DEBFBA232DF975B200927EF6 /* SignError.swift in Sources */,
 				DEBFBA262DF975B200927EF6 /* UIView+RxExtension.swift in Sources */,
 				DEBFBA272DF975B200927EF6 /* SplashReceiptValidationObserver.swift in Sources */,
@@ -727,13 +854,16 @@
 				DEBFBA562DF975B200927EF6 /* Scalable.swift in Sources */,
 				DEBFBA5C2DF975B200927EF6 /* Weak.swift in Sources */,
 				DEBFBA5F2DF975B200927EF6 /* RequestReview.swift in Sources */,
+				DEBFBB502DF9E73700927EF6 /* RealtyTableElement.swift in Sources */,
 				DEBFBA612DF975B200927EF6 /* AmplitudeManager.swift in Sources */,
 				DEBFBB292DF9A4C900927EF6 /* RealtyManager.swift in Sources */,
 				DEBFBA622DF975B200927EF6 /* ScreenSize.swift in Sources */,
 				DEBFBA632DF975B200927EF6 /* NumberLaunches.swift in Sources */,
 				DEBFBB272DF9A48800927EF6 /* GetRealtyHistoryItemsRequest.swift in Sources */,
+				DEBFBB3E2DF9C45600927EF6 /* SettingsViewController.swift in Sources */,
 				DEBFBA682DF975B200927EF6 /* ChoosePhotoFromGallery.swift in Sources */,
 				DEBFBA692DF975B200927EF6 /* AppDelegate.swift in Sources */,
+				DEBFBB462DF9DCCF00927EF6 /* RealtyViewController.swift in Sources */,
 				DEBFBA6D2DF975B200927EF6 /* TryAgainView.swift in Sources */,
 				DEBFBA702DF975B200927EF6 /* PaddingTextField.swift in Sources */,
 				DEBFBA712DF975B200927EF6 /* PaygateProductButton.swift in Sources */,
@@ -741,13 +871,17 @@
 				DEBFBA7B2DF975B200927EF6 /* Appearance.swift in Sources */,
 				DEBFBA7D2DF975B200927EF6 /* UIApplication+Extension.swift in Sources */,
 				DEBFBA852DF975B200927EF6 /* Currency.swift in Sources */,
-				DEBFBB242DF9A35100927EF6 /* Coordinates.swift in Sources */,
+				DEBFBB422DF9C45F00927EF6 /* SettingsView.swift in Sources */,
+				DEBFBB242DF9A35100927EF6 /* Coordinate.swift in Sources */,
 				DEBFBA872DF975B200927EF6 /* PaygateInfoCell.swift in Sources */,
 				DEBFBA882DF975B200927EF6 /* UIEdgeInsets+Extension.swift in Sources */,
 				DEBFBA8A2DF975B200927EF6 /* APIRequestBody.swift in Sources */,
+				DEBFBB332DF9AEF600927EF6 /* MapViewModel.swift in Sources */,
 				DEBFBB2D2DF9A89200927EF6 /* SearchRealtyRequest.swift in Sources */,
 				DEBFBA8B2DF975B200927EF6 /* SplashViewController.swift in Sources */,
 				DEBFBA902DF975B200927EF6 /* XOREncryption.swift in Sources */,
+				DEBFBB552DF9E7AE00927EF6 /* RealtyTableItemCell.swift in Sources */,
+				DEBFBB352DF9AEFD00927EF6 /* MapView.swift in Sources */,
 				DEBFBA922DF975B200927EF6 /* Collection+Extension.swift in Sources */,
 				DEBFBA942DF975B200927EF6 /* UIColor+Extension.swift in Sources */,
 				DEBFBA992DF975B200927EF6 /* PaygateView.swift in Sources */,
@@ -756,8 +890,12 @@
 				DEBFBB1E2DF9A2DE00927EF6 /* PageInfo.swift in Sources */,
 				DEBFBAA32DF975B200927EF6 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DEBFBAA42DF975B200927EF6 /* UIDevice+Extension.swift in Sources */,
+				DEBFBB402DF9C45B00927EF6 /* SettingsViewModel.swift in Sources */,
 				DEBFBAA92DF975B200927EF6 /* PaddingLabel.swift in Sources */,
 				DEBFBAAA2DF975B200927EF6 /* IAPManager.swift in Sources */,
+				DEBFBB482DF9DCD300927EF6 /* RealtyViewModel.swift in Sources */,
+				DEBFBB382DF9B6E500927EF6 /* LocationQuery.swift in Sources */,
+				DEBFBB3B2DF9BE5200927EF6 /* MapSearchField.swift in Sources */,
 				DEBFBAB22DF975B200927EF6 /* ContentError.swift in Sources */,
 				DEBFBAB32DF975B200927EF6 /* TryAgainViewController.swift in Sources */,
 				DEBFBABA2DF975B200927EF6 /* TakePhoto.swift in Sources */,
@@ -774,6 +912,8 @@
 				DEBFBAE62DF975B200927EF6 /* PaygateEnableTrialButton.swift in Sources */,
 				DEBFBAED2DF975B200927EF6 /* TextAttributes.swift in Sources */,
 				DEBFBAEE2DF975B200927EF6 /* APIFormDataRequestBody.swift in Sources */,
+				DEBFBB4A2DF9DCD800927EF6 /* RealtyView.swift in Sources */,
+				DEBFBB532DF9E74800927EF6 /* RealtyTableTitleCell.swift in Sources */,
 				DEBFBAF12DF975B200927EF6 /* ObservableRetrySingle.swift in Sources */,
 				DEBFBB222DF9A31100927EF6 /* RealtyHistoryItem.swift in Sources */,
 				DEBFBB2B2DF9A59800927EF6 /* RealtySearchResultSection.swift in Sources */,
@@ -813,11 +953,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7FN7933CDF;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GISRealEstate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "GIS Real Estate";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We will show you where you are to help you choose a place for your property";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -828,8 +974,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = akosnt17.aienglish2.dev.GISRealEstate;
+				PRODUCT_BUNDLE_IDENTIFIER = navisapps.autocheck.ru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Autocheck Development Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -846,11 +994,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7FN7933CDF;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GISRealEstate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "GIS Real Estate";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We will show you where you are to help you choose a place for your property";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -861,8 +1015,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = akosnt17.aienglish2.dev.GISRealEstate;
+				PRODUCT_BUNDLE_IDENTIFIER = navisapps.autocheck.ru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Autocheck Development Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

@@ -48,3 +48,6 @@
 "Paygate.PrivacyPolicy" = "Privacy Policy";
 "Paygate.RestorePurchases" = "Restore Purchases";
 "Paygate.BestOffer" = "⭐ Best Offer";
+
+// MARK: Map
+"Map.Search" = "Search realty";

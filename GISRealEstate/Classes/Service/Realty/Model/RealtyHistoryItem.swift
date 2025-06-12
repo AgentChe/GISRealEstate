@@ -8,7 +8,7 @@
 struct RealtyHistoryItem {
     let id: String
     let address: String?
-    let coordinates: Coordinates?
+    let coordinates: Coordinate?
     
     init?(json: [String: Any]) {
         guard let id = json["id"] as? String else { return nil }
@@ -16,9 +16,9 @@ struct RealtyHistoryItem {
         self.id = id
         self.address = json["address"] as? String
         self.coordinates = {
-            guard let coordinatesJSON = json["coordinates"] as? [String: Any] else { return nil }
+            guard let coordinateJSON = json["coordinates"] as? [String: Any] else { return nil }
             
-            return Coordinates(json: coordinatesJSON)
+            return Coordinate(json: coordinateJSON)
         }()
     }
 }
