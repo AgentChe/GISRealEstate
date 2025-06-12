@@ -51,3 +51,10 @@
 
 // MARK: Map
 "Map.Search" = "Search realty";
+
+// MARK: Settings
+"Settings.Title" = "Settings";
+"Settings.Links.ContactUs" = "Contact us";
+"Settings.Links.TermsOfUse" = "Terms of Use";
+"Settings.Links.PrivacyPolicy" = "Privacy Policy";
+"Settings.History" = "History";
