@@ -62,14 +62,14 @@ private extension PaygateProductButton {
         case true:
             let nameAttrs = TextAttributes()
                 .textColor(Appearance.mono200)
-                .font(Fonts.Quicksand.regular(size: 14.scale))
+                .font(Fonts.PublicSans.regular(size: 14.scale))
                 .lineHeight(20.scale)
             let name = "Paygate.Yearly".localized + "\n"
             result.append(name.attributed(with: nameAttrs))
             
             let bottomAttrs = TextAttributes()
                 .textColor(Appearance.mono200)
-                .font(Fonts.Quicksand.semiBold(size: 16.scale))
+                .font(Fonts.PublicSans.semiBold(size: 16.scale))
                 .lineHeight(22.scale)
             let price = Currency(iapProduct: product).formatted() ?? ""
             let bottom = String(format: "Paygate.Yearly.Bottom".localized, price)
@@ -77,7 +77,7 @@ private extension PaygateProductButton {
         case false:
             let attrs = TextAttributes()
                 .textColor(Appearance.mono200)
-                .font(Fonts.Quicksand.semiBold(size: 16.scale))
+                .font(Fonts.PublicSans.semiBold(size: 16.scale))
                 .lineHeight(22.scale)
             result.append("Paygate.FreeTrialDays".localized.uppercased().attributed(with: attrs))
         }
@@ -96,27 +96,27 @@ private extension PaygateProductButton {
         case true:
             let priceAttrs = TextAttributes()
                 .textColor(Appearance.mono200)
-                .font(Fonts.Quicksand.regular(size: 16.scale))
+                .font(Fonts.PublicSans.regular(size: 16.scale))
                 .lineHeight(22.scale)
             let price = Currency(iapProduct: product, div: 52).formatted() ?? ""
             result.append((price + "\n").attributed(with: priceAttrs))
             
             let periodAttrs = TextAttributes()
                 .textColor(Appearance.mono200)
-                .font(Fonts.Quicksand.regular(size: 14.scale))
+                .font(Fonts.PublicSans.regular(size: 14.scale))
                 .lineHeight(20.scale)
             result.append("Paygate.PerWeek".localized.attributed(with: periodAttrs))
         case false:
             let priceAttrs = TextAttributes()
                 .textColor(Appearance.mono200)
-                .font(Fonts.Quicksand.semiBold(size: 16.scale))
+                .font(Fonts.PublicSans.semiBold(size: 16.scale))
                 .lineHeight(22.scale)
             let price = Currency(iapProduct: product).formatted() ?? ""
             result.append(String(format: "Paygate.Then".localized, price).attributed(with: priceAttrs))
             
             let periodAttrs = TextAttributes()
                 .textColor(Appearance.mono200)
-                .font(Fonts.Quicksand.regular(size: 14.scale))
+                .font(Fonts.PublicSans.regular(size: 14.scale))
                 .lineHeight(20.scale)
             result.append("Paygate.PerWeek".localized.attributed(with: periodAttrs))
         }

@@ -12,12 +12,12 @@ final class PaygateBestOfferView: UIView {
     
     private lazy var selectedAttrs = TextAttributes()
         .textColor(Appearance.mono100)
-        .font(Fonts.Quicksand.regular(size: 12.scale))
+        .font(Fonts.PublicSans.regular(size: 12.scale))
         .lineHeight(17.scale)
         .textAlignment(.center)
     private lazy var deselectedAttrs = TextAttributes()
         .textColor(Appearance.mono200)
-        .font(Fonts.Quicksand.regular(size: 12.scale))
+        .font(Fonts.PublicSans.regular(size: 12.scale))
         .lineHeight(17.scale)
         .textAlignment(.center)
     
@@ -46,7 +46,7 @@ extension PaygateBestOfferView {
         backgroundColor = marked ? Appearance.mono200 : Appearance.mono100
         
         layer.borderWidth = marked ? 0 : 1.scale
-        layer.borderColor = marked ? UIColor.clear.cgColor : Appearance.custom219_223_230.cgColor
+        layer.borderColor = marked ? UIColor.clear.cgColor : Appearance.main100.cgColor
     }
 }
 

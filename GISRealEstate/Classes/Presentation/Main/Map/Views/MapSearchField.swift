@@ -102,12 +102,12 @@ private extension MapSearchField {
     
     func makeTextField() -> PaddingTextField {
         let attrs = TextAttributes()
-            .textColor(Appearance.custom60_60_67)
-            .font(Fonts.Quicksand.regular(size: 17.scale))
+            .textColor(Appearance.main100)
+            .font(Fonts.PublicSans.regular(size: 17.scale))
             .lineHeight(22.scale)
         let placeholderAttrs = TextAttributes()
-            .textColor(Appearance.custom60_60_67.withAlphaComponent(0.6))
-            .font(Fonts.Quicksand.regular(size: 17.scale))
+            .textColor(Appearance.main100.withAlphaComponent(0.6))
+            .font(Fonts.PublicSans.regular(size: 17.scale))
             .lineHeight(22.scale)
         
         let view = PaddingTextField()

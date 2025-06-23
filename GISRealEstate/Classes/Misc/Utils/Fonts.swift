@@ -9,22 +9,26 @@ import UIKit
 
 // TODO
 struct Fonts {
-    // MARK: Quicksand
-    struct Quicksand {
+    // MARK: PublicSans
+    struct PublicSans {
         static func semiBold(size: CGFloat) -> UIFont {
-            UIFont(name: "Quicksand-SemiBold", size: size)!
+            UIFont(name: "PublicSans-SemiBold", size: size)!
         }
         
         static func regular(size: CGFloat) -> UIFont {
-            UIFont(name: "Quicksand-Regular", size: size)!
+            UIFont(name: "PublicSans-Regular", size: size)!
+        }
+        
+        static func extraBold(size: CGFloat) -> UIFont {
+            UIFont(name: "PublicSans-ExtraBold", size: size)!
         }
         
         static func medium(size: CGFloat) -> UIFont {
-            UIFont(name: "Quicksand-Medium", size: size)!
+            UIFont(name: "PublicSans-Medium", size: size)!
         }
         
         static func bold(size: CGFloat) -> UIFont {
-            UIFont(name: "Quicksand-Bold", size: size)!
+            UIFont(name: "PublicSans-Bold", size: size)!
         }
     }
 }

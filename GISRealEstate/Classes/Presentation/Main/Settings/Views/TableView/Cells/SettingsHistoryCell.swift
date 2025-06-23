@@ -57,7 +57,7 @@ private extension SettingsHistoryCell {
     func makeContainer() -> UIView {
         let view = UIView()
         view.layer.cornerRadius = 8.scale
-        view.backgroundColor = Appearance.custom219_223_230
+        view.backgroundColor = Appearance.main100
         view.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(view)
         return view
@@ -66,7 +66,7 @@ private extension SettingsHistoryCell {
     func makeLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Appearance.mono200)
-            .font(Fonts.Quicksand.medium(size: 15.scale))
+            .font(Fonts.PublicSans.medium(size: 15.scale))
             .lineHeight(18.scale)
             .textAlignment(.left)
         

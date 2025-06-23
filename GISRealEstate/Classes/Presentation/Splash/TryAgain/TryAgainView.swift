@@ -35,7 +35,7 @@ final class TryAgainView: UIView {
 // MARK: Private
 private extension TryAgainView {
     func initialize() {
-        backgroundColor = Appearance.custom250_242_242
+        backgroundColor = Appearance.main100
     }
     
     func errorMessage() -> String {
@@ -119,7 +119,7 @@ private extension TryAgainView {
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Appearance.mono200)
-            .font(Fonts.Quicksand.bold(size: 23.scale))
+            .font(Fonts.PublicSans.bold(size: 23.scale))
             .lineHeight(29.scale)
             .textAlignment(.center)
         
@@ -134,7 +134,7 @@ private extension TryAgainView {
     func makeSubTitleLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Appearance.mono200)
-            .font(Fonts.Quicksand.regular(size: 15.scale))
+            .font(Fonts.PublicSans.regular(size: 15.scale))
             .lineHeight(18.scale)
             .textAlignment(.center)
         
@@ -149,7 +149,7 @@ private extension TryAgainView {
     func makeTryAgainButton() -> UIButton {
         let attrs = TextAttributes()
             .textColor(Appearance.mono100)
-            .font(Fonts.Quicksand.regular(size: 17.scale))
+            .font(Fonts.PublicSans.regular(size: 17.scale))
         
         let view = UIButton()
         view.setAttributedTitle("TryAgain.Button".localized.attributed(with: attrs), for: .normal)
@@ -163,7 +163,7 @@ private extension TryAgainView {
     func makeContactButton() -> UIButton {
         let attrs = TextAttributes()
             .textColor(Appearance.main200)
-            .font(Fonts.Quicksand.regular(size: 17.scale))
+            .font(Fonts.PublicSans.regular(size: 17.scale))
         
         let view = UIButton()
         view.setAttributedTitle("TryAgain.Contact".localized.attributed(with: attrs), for: .normal)

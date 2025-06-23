@@ -80,7 +80,7 @@ private extension SettingsLinksCell {
     func makeContainer() -> UIView {
         let view = UIView()
         view.layer.cornerRadius = 8.scale
-        view.backgroundColor = Appearance.custom219_223_230
+        view.backgroundColor = Appearance.main100
         view.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(view)
         return view

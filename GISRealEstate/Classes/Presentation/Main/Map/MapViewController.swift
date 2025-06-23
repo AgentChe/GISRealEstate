@@ -87,13 +87,15 @@ private extension MapViewController {
         case .searchByAddress(let address):
             mainView.searchAddressField.setup(text: nil)
             
-            let vc = RealtyViewController.make(address: address)
-            navigationController?.pushViewController(vc, animated: true)
+            // TODO
+//            let vc = RealtyViewController.make(address: address)
+//            navigationController?.pushViewController(vc, animated: true)
         case .searchByCoordinate(let coordinate):
             mainView.searchAddressField.setup(text: nil)
             
-            let vc = RealtyViewController.make(coordinate: coordinate)
-            navigationController?.pushViewController(vc, animated: true)
+            // TODO
+//            let vc = RealtyViewController.make(coordinate: coordinate)
+//            navigationController?.pushViewController(vc, animated: true)
         }
     }
     

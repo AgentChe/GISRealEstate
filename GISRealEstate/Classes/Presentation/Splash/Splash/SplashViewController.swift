@@ -37,7 +37,7 @@ final class SplashViewController: UIViewController {
         
         output.route
             .drive(Binder(self) { base, route in
-                base.route(route)
+//                base.route(route) TODO
             })
             .disposed(by: disposeBag)
         

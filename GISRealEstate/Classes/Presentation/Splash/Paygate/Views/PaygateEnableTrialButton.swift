@@ -19,7 +19,7 @@ final class PaygateEnableTrialButton: UIButton {
     
     private lazy var attrs = TextAttributes()
         .textColor(Appearance.mono200)
-        .font(Fonts.Quicksand.semiBold(size: 16.scale))
+        .font(Fonts.PublicSans.semiBold(size: 16.scale))
         .lineHeight(22.scale)
         .textAlignment(.left)
     

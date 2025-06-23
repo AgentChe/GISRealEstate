@@ -65,7 +65,7 @@ private extension SettingsLinkButton {
     func makeLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Appearance.mono200)
-            .font(Fonts.Quicksand.medium(size: 15.scale))
+            .font(Fonts.PublicSans.medium(size: 15.scale))
             .lineHeight(18.scale)
             .textAlignment(.left)
         
