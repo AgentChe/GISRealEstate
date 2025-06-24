@@ -13,6 +13,11 @@
 		DE0CC7082E09815700379021 /* PublicSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE0CC7072E09815700379021 /* PublicSans-Medium.ttf */; };
 		DE0CC70A2E09815C00379021 /* PublicSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE0CC7092E09815C00379021 /* PublicSans-Regular.ttf */; };
 		DE0CC70C2E09816200379021 /* PublicSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE0CC70B2E09816200379021 /* PublicSans-SemiBold.ttf */; };
+		DE0CC71E2E09B11C00379021 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC71B2E09B11C00379021 /* OnboardingViewController.swift */; };
+		DE0CC71F2E09B11C00379021 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC71A2E09B11C00379021 /* OnboardingView.swift */; };
+		DE0CC7212E09B11C00379021 /* OnstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7162E09B11C00379021 /* OnstructionView.swift */; };
+		DE0CC7262E09B4C000379021 /* OPageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7252E09B4C000379021 /* OPageIndicatorView.swift */; };
+		DE0CC7292E0A9BA800379021 /* LocationAuthorizationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7282E0A9BA800379021 /* LocationAuthorizationQuery.swift */; };
 		DEBFB8A42DF9748D00927EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB8982DF9748D00927EF6 /* Assets.xcassets */; };
 		DEBFB8A62DF9748D00927EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB89B2DF9748D00927EF6 /* LaunchScreen.storyboard */; };
 		DEBFBA0E2DF975B200927EF6 /* PaygateBestOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB99F2DF975B100927EF6 /* PaygateBestOfferView.swift */; };
@@ -114,6 +119,11 @@
 		DE0CC7072E09815700379021 /* PublicSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PublicSans-Medium.ttf"; sourceTree = "<group>"; };
 		DE0CC7092E09815C00379021 /* PublicSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PublicSans-Regular.ttf"; sourceTree = "<group>"; };
 		DE0CC70B2E09816200379021 /* PublicSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PublicSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		DE0CC7162E09B11C00379021 /* OnstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnstructionView.swift; sourceTree = "<group>"; };
+		DE0CC71A2E09B11C00379021 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DE0CC71B2E09B11C00379021 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		DE0CC7252E09B4C000379021 /* OPageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPageIndicatorView.swift; sourceTree = "<group>"; };
+		DE0CC7282E0A9BA800379021 /* LocationAuthorizationQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAuthorizationQuery.swift; sourceTree = "<group>"; };
 		DEBFB87F2DF9748700927EF6 /* GISRealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GISRealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBFB8982DF9748D00927EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBFB8992DF9748D00927EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -231,11 +241,40 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		DE0CC70D2E09868D00379021 /* Onboarding */ = {
+		DE0CC7192E09B11C00379021 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DE0CC7242E09B4A600379021 /* Atoms */,
+				DE0CC7162E09B11C00379021 /* OnstructionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE0CC71C2E09B11C00379021 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC7272E0A9B9100379021 /* Utils */,
+				DE0CC7192E09B11C00379021 /* Views */,
+				DE0CC71B2E09B11C00379021 /* OnboardingViewController.swift */,
+				DE0CC71A2E09B11C00379021 /* OnboardingView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DE0CC7242E09B4A600379021 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC7252E09B4C000379021 /* OPageIndicatorView.swift */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		DE0CC7272E0A9B9100379021 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC7282E0A9BA800379021 /* LocationAuthorizationQuery.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DEBFB8762DF9748700927EF6 = {
@@ -414,9 +453,9 @@
 			children = (
 				DEBFB99D2DF975B100927EF6 /* Utils */,
 				DEBFB9A42DF975B100927EF6 /* Views */,
-				DEBFB9A52DF975B100927EF6 /* PaygateView.swift */,
 				DEBFB9A62DF975B100927EF6 /* PaygateViewController.swift */,
 				DEBFB9A72DF975B100927EF6 /* PaygateViewModel.swift */,
+				DEBFB9A52DF975B100927EF6 /* PaygateView.swift */,
 			);
 			path = Paygate;
 			sourceTree = "<group>";
@@ -443,8 +482,8 @@
 		DEBFB9B12DF975B100927EF6 /* TryAgain */ = {
 			isa = PBXGroup;
 			children = (
-				DEBFB9AF2DF975B100927EF6 /* TryAgainView.swift */,
 				DEBFB9B02DF975B100927EF6 /* TryAgainViewController.swift */,
+				DEBFB9AF2DF975B100927EF6 /* TryAgainView.swift */,
 			);
 			path = TryAgain;
 			sourceTree = "<group>";
@@ -452,7 +491,7 @@
 		DEBFB9B22DF975B100927EF6 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				DE0CC70D2E09868D00379021 /* Onboarding */,
+				DE0CC71C2E09B11C00379021 /* Onboarding */,
 				DEBFB9A82DF975B100927EF6 /* Paygate */,
 				DEBFB9AE2DF975B100927EF6 /* Splash */,
 				DEBFB9B12DF975B100927EF6 /* TryAgain */,
@@ -870,6 +909,7 @@
 				DEBFBA852DF975B200927EF6 /* Currency.swift in Sources */,
 				DEBFBB422DF9C45F00927EF6 /* SettingsView.swift in Sources */,
 				DEBFBB242DF9A35100927EF6 /* Coordinate.swift in Sources */,
+				DE0CC7292E0A9BA800379021 /* LocationAuthorizationQuery.swift in Sources */,
 				DEBFBB5B2DFACC7600927EF6 /* SettingsTableView.swift in Sources */,
 				DEBFBA872DF975B200927EF6 /* PaygateInfoCell.swift in Sources */,
 				DEBFBA882DF975B200927EF6 /* UIEdgeInsets+Extension.swift in Sources */,
@@ -884,6 +924,9 @@
 				DEBFBA942DF975B200927EF6 /* UIColor+Extension.swift in Sources */,
 				DEBFBA992DF975B200927EF6 /* PaygateView.swift in Sources */,
 				DEBFBA9A2DF975B200927EF6 /* ObservableAndSingle+Extension.swift in Sources */,
+				DE0CC71E2E09B11C00379021 /* OnboardingViewController.swift in Sources */,
+				DE0CC71F2E09B11C00379021 /* OnboardingView.swift in Sources */,
+				DE0CC7212E09B11C00379021 /* OnstructionView.swift in Sources */,
 				DEBFBAA22DF975B200927EF6 /* ProfileCreateRequest.swift in Sources */,
 				DEBFBB1E2DF9A2DE00927EF6 /* PageInfo.swift in Sources */,
 				DEBFBAA32DF975B200927EF6 /* UITapGestureRecognizer+Extension.swift in Sources */,
@@ -910,6 +953,7 @@
 				DEBFBAED2DF975B200927EF6 /* TextAttributes.swift in Sources */,
 				DEBFBAEE2DF975B200927EF6 /* APIFormDataRequestBody.swift in Sources */,
 				DEBFBAF12DF975B200927EF6 /* ObservableRetrySingle.swift in Sources */,
+				DE0CC7262E09B4C000379021 /* OPageIndicatorView.swift in Sources */,
 				DEBFBB222DF9A31100927EF6 /* RealtyHistoryItem.swift in Sources */,
 				DEBFBB2B2DF9A59800927EF6 /* RealtySearchResultSection.swift in Sources */,
 				DEBFBB612DFACC9000927EF6 /* SettingsLinkButton.swift in Sources */,

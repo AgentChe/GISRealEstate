@@ -10,7 +10,7 @@ import RxCocoa
 
 final class SplashViewModel {
     enum Route {
-        case paygateTransitionMain, main
+        case paygateTransitionMain, onboarding, main
     }
     
     var tryAgain: ((Error) -> (Observable<Void>))?
@@ -46,6 +46,10 @@ private extension SplashViewModel {
         login
             .compactMap { [weak self] void -> Route? in
                 guard let self else { return nil }
+                
+                if !OnboardingViewController.wasViewed() {
+                    return .onboarding
+                }
                 
                 guard sessionManager.hasActiveSubscriptions() else { return .paygateTransitionMain }
                 

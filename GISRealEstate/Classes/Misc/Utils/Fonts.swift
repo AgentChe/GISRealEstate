@@ -7,7 +7,6 @@
 
 import UIKit
 
-// TODO
 struct Fonts {
     // MARK: PublicSans
     struct PublicSans {

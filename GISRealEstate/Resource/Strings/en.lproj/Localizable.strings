@@ -26,14 +26,20 @@
 "Splash.Title.1" = "‍GIS";
 "Splash.Title.2" = "REAL ESTATE";
 
+// MARK: Onboarding
+"Onboarding.Instructions.First.Title" = "Find any property fast";
+"Onboarding.Instructions.First.SubTitle" = "Type an address or tap the map to view full property details — instantly and clearly.";
+"Onboarding.Instructions.Second.Title" = "Complete property info";
+"Onboarding.Instructions.Second.SubTitle" = "Everything you need — location, building, zoning, ownership, and value — in one place.";
+
 // MARK: Paygate
 "Paygate.Error.Title" = "Error";
 "Paygate.Error.Text" = "An error occurred during execution. Try later.";
 "Paygate.Error.Button" = "OK";
-"Paygate.Title" = "Upgrade for Premium";
-"Paygate.Info1" = "95% weight detection accuracy";
-"Paygate.Info2" = "Unlimited measurements";
-"Paygate.Info3" = "Instant, precise results";
+"Paygate.Title" = "Upgrade Premium";
+"Paygate.Info1" = "Access full property reports";
+"Paygate.Info2" = "View zoning, flood, and ownership data";
+"Paygate.Info3" = "Unlock detailed location and building info";
 "Paygate.EnableFreeTrial" = "Enable Free Trial";
 "Paygate.FreeTrialEnabled" = "Free Trial Enabled";
 "Paygate.Yearly" = "Yearly";

@@ -37,7 +37,7 @@ final class SplashViewController: UIViewController {
         
         output.route
             .drive(Binder(self) { base, route in
-//                base.route(route) TODO
+                base.route(route)
             })
             .disposed(by: disposeBag)
         
@@ -75,6 +75,8 @@ private extension SplashViewController {
                 self?.route(.main)
             }
             present(vc, animated: true)
+        case .onboarding:
+            window.rootViewController = OnboardingViewController.make()
         case .main:
              window.rootViewController = MapViewController.make(requestReview: false)
         }

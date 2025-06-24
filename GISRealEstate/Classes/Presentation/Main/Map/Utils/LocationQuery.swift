@@ -12,6 +12,8 @@ final class LocationQuery: NSObject {
     
     private lazy var manager = CLLocationManager()
     
+    private var authorizationQuery: LocationAuthorizationQuery?
+    
     override init() {
         super.init()
         
@@ -22,19 +24,25 @@ final class LocationQuery: NSObject {
 // MARK: Public
 extension LocationQuery {
     func request() {
-        switch manager.authorizationStatus {
-        case .authorizedAlways, .authorizedWhenInUse:
-            if let location = manager.location {
-                let coordinate = Coordinate(lat: location.coordinate.latitude, lon: location.coordinate.longitude)
-                onCoordinate?(coordinate)
-            } else {
-                manager.requestLocation()
+        let authorizationQuery = LocationAuthorizationQuery { [weak self] status in
+            guard let self else { return }
+            
+            switch status {
+            case .authorized:
+                if let location = manager.location {
+                    let coordinate = Coordinate(lat: location.coordinate.latitude, lon: location.coordinate.longitude)
+                    onCoordinate?(coordinate)
+                } else {
+                    manager.requestLocation()
+                }
+            case .denied:
+                onCoordinate?(nil)
             }
-        case .notDetermined:
-            manager.requestWhenInUseAuthorization()
-        default:
-            onCoordinate?(nil)
+            
+            self.authorizationQuery = nil
         }
+        self.authorizationQuery = authorizationQuery
+        authorizationQuery.request()
     }
 }
 
@@ -53,9 +61,5 @@ extension LocationQuery: CLLocationManagerDelegate {
         onCoordinate?(nil)
         
         manager.stopUpdatingLocation()
-    }
-    
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        request()
     }
 }
