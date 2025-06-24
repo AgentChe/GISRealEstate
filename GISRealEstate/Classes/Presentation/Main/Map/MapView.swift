@@ -6,12 +6,23 @@
 //
 
 import UIKit
-import MapKit
+import RxSwift
+import RxCocoa
 
 final class MapView: UIView {
-    lazy var mapKitView = makeMapKitView()
-    lazy var searchAddressField = makeSearchAddressField()
+    enum Mode {
+        case map, noLocationAccess
+    }
+    
+    lazy var container = makeContainer()
     lazy var settingsButton = makeSettingsButton()
+    
+    private var mapKitView: MapKitView?
+    
+    private lazy var didTapMyGeoTrigger = PublishRelay<Void>()
+    private lazy var didTapEnableLocationTrigger = PublishRelay<Void>()
+    
+    private lazy var disposables = [Disposable]()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,23 +38,64 @@ final class MapView: UIView {
 
 // MARK: Public
 extension MapView {
-    func setup(coordinate: Coordinate) {
-        let region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(
-                latitude: coordinate.lat,
-                longitude: coordinate.lon
-            ),
-            latitudinalMeters: 5000,
-            longitudinalMeters: 5000
-        )
-        mapKitView.setRegion(region, animated: true)
+    func setup(mode: Mode) {
+        container.subviews.forEach { $0.removeFromSuperview() }
+        
+        disposables.forEach { $0.dispose() }
+        disposables = []
+        
+        let view: UIView = {
+            switch mode {
+            case .map:
+                let view = MapKitView()
+                mapKitView = view
+                
+                let disposable = view.myGeoButton.rx.tap.asSignal()
+                    .emit(to: didTapMyGeoTrigger)
+                disposables.append(disposable)
+                
+                return view
+            case .noLocationAccess:
+                let view = MapNoLocationAccessView()
+                
+                let disposable = view.openSettings.rx.tap.asSignal()
+                    .emit(to: didTapEnableLocationTrigger)
+                disposables.append(disposable)
+                
+                return view
+            }
+        }()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        container.addSubview(view)
+        
+        NSLayoutConstraint.activate([
+            view.leadingAnchor.constraint(equalTo: container.leadingAnchor),
+            view.trailingAnchor.constraint(equalTo: container.trailingAnchor),
+            view.topAnchor.constraint(equalTo: container.topAnchor),
+            view.bottomAnchor.constraint(equalTo: container.bottomAnchor)
+        ])
+        
+        layoutIfNeeded()
+    }
+    
+    func setup(myGeo: Coordinate) {
+        mapKitView?.setup(coordinate: myGeo)
+    }
+    
+    var didTapMyGeo: Signal<Void> {
+        didTapMyGeoTrigger.asSignal()
+    }
+    
+    var didTapEnableLocation: Signal<Void> {
+        didTapEnableLocationTrigger.asSignal()
     }
 }
 
 // MARK: Private
 private extension MapView {
     func initialize() {
-        backgroundColor = Appearance.main100
+        backgroundColor = Appearance.main300
     }
 }
 
@@ -51,47 +103,33 @@ private extension MapView {
 private extension MapView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            mapKitView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            mapKitView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            mapKitView.topAnchor.constraint(equalTo: topAnchor),
-            mapKitView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            container.leadingAnchor.constraint(equalTo: leadingAnchor),
+            container.trailingAnchor.constraint(equalTo: trailingAnchor),
+            container.topAnchor.constraint(equalTo: topAnchor),
+            container.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
         
         NSLayoutConstraint.activate([
-            searchAddressField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
-            searchAddressField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -56.scale),
-            searchAddressField.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 2.scale)
-        ])
-        
-        NSLayoutConstraint.activate([
-            settingsButton.widthAnchor.constraint(equalToConstant: 24.scale),
-            settingsButton.heightAnchor.constraint(equalToConstant: 24.scale),
-            settingsButton.centerYAnchor.constraint(equalTo: searchAddressField.centerYAnchor),
-            settingsButton.leadingAnchor.constraint(equalTo: searchAddressField.trailingAnchor, constant: 16.scale)
+            settingsButton.widthAnchor.constraint(equalToConstant: 56.scale),
+            settingsButton.heightAnchor.constraint(equalToConstant: 56.scale),
+            settingsButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
+            settingsButton.topAnchor.constraint(equalTo: topAnchor, constant: 68.scale)
         ])
     }
 }
 
 // MARK: Lazy initialization
 private extension MapView {
-    func makeMapKitView() -> MKMapView {
-        let view = MKMapView()
-        view.showsUserLocation = true
+    func makeContainer() -> UIView {
+        let view = UIView()
+        view.backgroundColor = Appearance.main300
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
     }
     
-    func makeSearchAddressField() -> MapSearchField {
-        let view = MapSearchField()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(view)
-        return view
-    }
-    
-    func makeSettingsButton() -> TapAreaButton {
-        let view = TapAreaButton()
-        view.setImage(UIImage(named: "Map.Settings"), for: .normal)
+    func makeSettingsButton() -> MapActionButton {
+        let view = MapActionButton(imageName: "Map.Settings")
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

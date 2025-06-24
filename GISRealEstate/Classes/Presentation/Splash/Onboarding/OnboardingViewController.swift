@@ -28,10 +28,8 @@ extension OnboardingViewController {
         OnboardingViewController()
     }
     
-    // TODO
     static func wasViewed() -> Bool {
-        false
-//        UserDefaults.standard.bool(forKey: OnboardingViewController.Constants.wasViewedKey)
+        UserDefaults.standard.bool(forKey: OnboardingViewController.Constants.wasViewedKey)
     }
 }
 
@@ -47,10 +45,10 @@ private extension OnboardingViewController {
         }
         
         if SessionManager().hasActiveSubscriptions() {
-//            window.rootViewController = MainViewController.make(requestReview: true) TODO
+            window.rootViewController = MapViewController.make(requestReview: true)
         } else {
             let vc = PaygateViewController.make {
-//                window.rootViewController = MainViewController.make(requestReview: true) TODO
+                window.rootViewController = MapViewController.make(requestReview: true)
             }
             present(vc, animated: true)
         }

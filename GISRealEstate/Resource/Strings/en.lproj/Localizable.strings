@@ -57,7 +57,9 @@
 "Paygate.BestOffer" = "⭐ Best Offer";
 
 // MARK: Map
-"Map.Search" = "Search realty";
+"Map.NoLocationAccess.Title" = "Enable location?";
+"Map.NoLocationAccess.SubTitle" = "We need your permission to show your position on the map and nearby properties.";
+"Map.NoLocationAccess.OpenSettings" = "Open settings";
 
 // MARK: Settings
 "Settings.Title" = "Settings";

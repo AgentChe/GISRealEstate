@@ -9,6 +9,7 @@ struct RealtySearchResultSection {
     let title: String
     let items: [String: String]
     let paid: Bool
+    let favorite: Bool
     
     init?(json: [String: Any]) {
         guard
@@ -33,6 +34,7 @@ struct RealtySearchResultSection {
             return result
         }()
         self.paid = paid
+        self.favorite = json["is_favorite"] as? Bool ?? false
     }
 }
 

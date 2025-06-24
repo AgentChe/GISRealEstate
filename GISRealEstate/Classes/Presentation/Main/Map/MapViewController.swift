@@ -7,7 +7,6 @@
 
 import UIKit
 import RxSwift
-import RxCocoa
 
 final class MapViewController: UIViewController {
     private lazy var mainView = MapView()
@@ -16,11 +15,10 @@ final class MapViewController: UIViewController {
     
     private let requestReview: Bool
     
+    private var locationAuthorizationQuery: LocationAuthorizationQuery?
     private lazy var locationQuery = LocationQuery()
     
     private lazy var disposeBag = DisposeBag()
-    
-    private lazy var didSelectCoordinateTrigger = PublishRelay<Coordinate>()
     
     private init(requestReview: Bool) {
         self.requestReview = requestReview
@@ -42,15 +40,13 @@ final class MapViewController: UIViewController {
         locationQuery.onCoordinate = { [weak self] coordinate in
             guard let coordinate else { return }
             
-            self?.mainView.setup(coordinate: coordinate)
+            self?.mainView.setup(myGeo: coordinate)
         }
-        locationQuery.request()
         
         let output = viewModel.configure(input: MapViewModel.Input(
-            didSearchByAddress: mainView.searchAddressField.didTapSearch,
-            didChangeSearchAddress: mainView.searchAddressField.changedText,
             didTapSettings: mainView.settingsButton.rx.tap.asSignal(),
-            didSelectCoordinate: didSelectCoordinateTrigger.asSignal()
+            didTapMyGeo: mainView.didTapMyGeo,
+            didTapEnableLocation: mainView.didTapEnableLocation
         ))
         
         output.action
@@ -63,7 +59,7 @@ final class MapViewController: UIViewController {
             RequestReview.request()
         }
         
-        addTapGestureOnMap()
+        determineAuthorizationStatus()
     }
 }
 
@@ -84,35 +80,27 @@ private extension MapViewController {
         case .openSettings:
             let vc = SettingsViewController.make()
             navigationController?.pushViewController(vc, animated: true)
-        case .searchByAddress(let address):
-            mainView.searchAddressField.setup(text: nil)
-            
-            // TODO
-//            let vc = RealtyViewController.make(address: address)
-//            navigationController?.pushViewController(vc, animated: true)
-        case .searchByCoordinate(let coordinate):
-            mainView.searchAddressField.setup(text: nil)
-            
-            // TODO
-//            let vc = RealtyViewController.make(coordinate: coordinate)
-//            navigationController?.pushViewController(vc, animated: true)
+        case .moveToMyGeo:
+            locationQuery.request()
+        case .enableLocation:
+            guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
     
-    func addTapGestureOnMap() {
-        let tapGesture = UITapGestureRecognizer()
-        mainView.mapKitView.addGestureRecognizer(tapGesture)
-        
-        tapGesture.rx.event
-            .bind(to: Binder(self) { base, gesture in
-                base.mainView.endEditing(true)
+    func determineAuthorizationStatus() {
+        let locationAuthorizationQuery = LocationAuthorizationQuery { [weak self] status in
+            guard let self else { return }
+            
+            switch status {
+            case .authorized:
+                mainView.setup(mode: .map)
                 
-                let point = gesture.location(in: base.mainView.mapKitView)
-                let coord = base.mainView.mapKitView.convert(point, toCoordinateFrom: base.mainView.mapKitView)
-                let coordinate = Coordinate(lat: coord.latitude, lon: coord.longitude)
-                
-                base.didSelectCoordinateTrigger.accept(coordinate)
-            })
-            .disposed(by: disposeBag)
+                locationQuery.request()
+            case .denied:
+                mainView.setup(mode: .noLocationAccess)
+            }
+        }
+        locationAuthorizationQuery.request()
     }
 }
