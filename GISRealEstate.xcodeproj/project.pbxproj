@@ -21,6 +21,12 @@
 		DE0CC72C2E0ACB8900379021 /* MapActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC72B2E0ACB8900379021 /* MapActionButton.swift */; };
 		DE0CC72E2E0AD0CA00379021 /* MapNoLocationAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC72D2E0AD0CA00379021 /* MapNoLocationAccessView.swift */; };
 		DE0CC7302E0AD30600379021 /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC72F2E0AD30600379021 /* MapKitView.swift */; };
+		DE0CC7322E0AFEA000379021 /* RealtyFavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7312E0AFEA000379021 /* RealtyFavoriteItem.swift */; };
+		DE0CC7342E0AFF2300379021 /* GetRealtyFavoriteItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7332E0AFF2300379021 /* GetRealtyFavoriteItemsRequest.swift */; };
+		DE0CC7362E0AFFB600379021 /* AddFavoriteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7352E0AFFB600379021 /* AddFavoriteRequest.swift */; };
+		DE0CC7382E0B001600379021 /* RemoveFavoriteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7372E0B001600379021 /* RemoveFavoriteRequest.swift */; };
+		DE0CC73A2E0B00A100379021 /* FavoritesClearRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7392E0B00A100379021 /* FavoritesClearRequest.swift */; };
+		DE0CC73C2E0B00F000379021 /* HistoryClearRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC73B2E0B00F000379021 /* HistoryClearRequest.swift */; };
 		DEBFB8A42DF9748D00927EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB8982DF9748D00927EF6 /* Assets.xcassets */; };
 		DEBFB8A62DF9748D00927EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB89B2DF9748D00927EF6 /* LaunchScreen.storyboard */; };
 		DEBFBA0E2DF975B200927EF6 /* PaygateBestOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB99F2DF975B100927EF6 /* PaygateBestOfferView.swift */; };
@@ -125,6 +131,12 @@
 		DE0CC72B2E0ACB8900379021 /* MapActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapActionButton.swift; sourceTree = "<group>"; };
 		DE0CC72D2E0AD0CA00379021 /* MapNoLocationAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNoLocationAccessView.swift; sourceTree = "<group>"; };
 		DE0CC72F2E0AD30600379021 /* MapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitView.swift; sourceTree = "<group>"; };
+		DE0CC7312E0AFEA000379021 /* RealtyFavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyFavoriteItem.swift; sourceTree = "<group>"; };
+		DE0CC7332E0AFF2300379021 /* GetRealtyFavoriteItemsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRealtyFavoriteItemsRequest.swift; sourceTree = "<group>"; };
+		DE0CC7352E0AFFB600379021 /* AddFavoriteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavoriteRequest.swift; sourceTree = "<group>"; };
+		DE0CC7372E0B001600379021 /* RemoveFavoriteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFavoriteRequest.swift; sourceTree = "<group>"; };
+		DE0CC7392E0B00A100379021 /* FavoritesClearRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesClearRequest.swift; sourceTree = "<group>"; };
+		DE0CC73B2E0B00F000379021 /* HistoryClearRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryClearRequest.swift; sourceTree = "<group>"; };
 		DEBFB87F2DF9748700927EF6 /* GISRealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GISRealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBFB8982DF9748D00927EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBFB8992DF9748D00927EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -645,6 +657,7 @@
 				DEBFBB232DF9A35100927EF6 /* Coordinate.swift */,
 				DEBFBB212DF9A31100927EF6 /* RealtyHistoryItem.swift */,
 				DEBFBB2A2DF9A59800927EF6 /* RealtySearchResultSection.swift */,
+				DE0CC7312E0AFEA000379021 /* RealtyFavoriteItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -654,6 +667,11 @@
 			children = (
 				DEBFBB262DF9A48800927EF6 /* GetRealtyHistoryItemsRequest.swift */,
 				DEBFBB2C2DF9A89200927EF6 /* SearchRealtyRequest.swift */,
+				DE0CC7332E0AFF2300379021 /* GetRealtyFavoriteItemsRequest.swift */,
+				DE0CC7352E0AFFB600379021 /* AddFavoriteRequest.swift */,
+				DE0CC7372E0B001600379021 /* RemoveFavoriteRequest.swift */,
+				DE0CC7392E0B00A100379021 /* FavoritesClearRequest.swift */,
+				DE0CC73B2E0B00F000379021 /* HistoryClearRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -842,6 +860,7 @@
 				DEBFBA0E2DF975B200927EF6 /* PaygateBestOfferView.swift in Sources */,
 				DEBFBA132DF975B200927EF6 /* IAPProduct.swift in Sources */,
 				DEBFBA172DF975B200927EF6 /* SessionManager.swift in Sources */,
+				DE0CC7362E0AFFB600379021 /* AddFavoriteRequest.swift in Sources */,
 				DEBFBA1A2DF975B200927EF6 /* TapAreaButton.swift in Sources */,
 				DEBFBA1C2DF975B200927EF6 /* GradientView.swift in Sources */,
 				DEBFBA1E2DF975B200927EF6 /* RequestResult.swift in Sources */,
@@ -855,8 +874,10 @@
 				DEBFBA2B2DF975B200927EF6 /* PaygateViewModel.swift in Sources */,
 				DEBFBA312DF975B200927EF6 /* ProfileBindingRequest.swift in Sources */,
 				DEBFBA332DF975B200927EF6 /* PaygateViewController.swift in Sources */,
+				DE0CC73C2E0B00F000379021 /* HistoryClearRequest.swift in Sources */,
 				DEBFBA3F2DF975B200927EF6 /* IAPActionResult.swift in Sources */,
 				DEBFBA4C2DF975B200927EF6 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
+				DE0CC7342E0AFF2300379021 /* GetRealtyFavoriteItemsRequest.swift in Sources */,
 				DEBFBA542DF975B200927EF6 /* ProfileManager.swift in Sources */,
 				DEBFBA562DF975B200927EF6 /* Scalable.swift in Sources */,
 				DEBFBA5C2DF975B200927EF6 /* Weak.swift in Sources */,
@@ -870,6 +891,7 @@
 				DEBFBA682DF975B200927EF6 /* ChoosePhotoFromGallery.swift in Sources */,
 				DEBFBA692DF975B200927EF6 /* AppDelegate.swift in Sources */,
 				DEBFBA6D2DF975B200927EF6 /* TryAgainView.swift in Sources */,
+				DE0CC7382E0B001600379021 /* RemoveFavoriteRequest.swift in Sources */,
 				DEBFBA702DF975B200927EF6 /* PaddingTextField.swift in Sources */,
 				DEBFBA712DF975B200927EF6 /* PaygateProductButton.swift in Sources */,
 				DEBFBA742DF975B200927EF6 /* SplashView.swift in Sources */,
@@ -893,6 +915,7 @@
 				DEBFBA942DF975B200927EF6 /* UIColor+Extension.swift in Sources */,
 				DEBFBA992DF975B200927EF6 /* PaygateView.swift in Sources */,
 				DEBFBA9A2DF975B200927EF6 /* ObservableAndSingle+Extension.swift in Sources */,
+				DE0CC73A2E0B00A100379021 /* FavoritesClearRequest.swift in Sources */,
 				DE0CC71E2E09B11C00379021 /* OnboardingViewController.swift in Sources */,
 				DE0CC71F2E09B11C00379021 /* OnboardingView.swift in Sources */,
 				DE0CC7212E09B11C00379021 /* OnstructionView.swift in Sources */,
@@ -918,6 +941,7 @@
 				DEBFBADF2DF975B200927EF6 /* GlobalDefinitions.swift in Sources */,
 				DEBFBAE02DF975B200927EF6 /* PaygateInfoView.swift in Sources */,
 				DEBFBAE62DF975B200927EF6 /* PaygateEnableTrialButton.swift in Sources */,
+				DE0CC7322E0AFEA000379021 /* RealtyFavoriteItem.swift in Sources */,
 				DEBFBAED2DF975B200927EF6 /* TextAttributes.swift in Sources */,
 				DEBFBAEE2DF975B200927EF6 /* APIFormDataRequestBody.swift in Sources */,
 				DEBFBAF12DF975B200927EF6 /* ObservableRetrySingle.swift in Sources */,
