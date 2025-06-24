@@ -106,11 +106,7 @@
 		DEBFBB3E2DF9C45600927EF6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB3D2DF9C45600927EF6 /* SettingsViewController.swift */; };
 		DEBFBB402DF9C45B00927EF6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB3F2DF9C45B00927EF6 /* SettingsViewModel.swift */; };
 		DEBFBB422DF9C45F00927EF6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB412DF9C45F00927EF6 /* SettingsView.swift */; };
-		DEBFBB592DFACC6F00927EF6 /* SettingsTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB582DFACC6F00927EF6 /* SettingsTableElement.swift */; };
-		DEBFBB5B2DFACC7600927EF6 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB5A2DFACC7600927EF6 /* SettingsTableView.swift */; };
-		DEBFBB5F2DFACC8900927EF6 /* SettingsLinksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB5E2DFACC8900927EF6 /* SettingsLinksCell.swift */; };
 		DEBFBB612DFACC9000927EF6 /* SettingsLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB602DFACC9000927EF6 /* SettingsLinkButton.swift */; };
-		DEBFBB632DFACCF200927EF6 /* SettingsHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB622DFACCF200927EF6 /* SettingsHistoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -216,11 +212,7 @@
 		DEBFBB3D2DF9C45600927EF6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DEBFBB3F2DF9C45B00927EF6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		DEBFBB412DF9C45F00927EF6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		DEBFBB582DFACC6F00927EF6 /* SettingsTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableElement.swift; sourceTree = "<group>"; };
-		DEBFBB5A2DFACC7600927EF6 /* SettingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
-		DEBFBB5E2DFACC8900927EF6 /* SettingsLinksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinksCell.swift; sourceTree = "<group>"; };
 		DEBFBB602DFACC9000927EF6 /* SettingsLinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinkButton.swift; sourceTree = "<group>"; };
-		DEBFBB622DFACCF200927EF6 /* SettingsHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHistoryCell.swift; sourceTree = "<group>"; };
 		E1D6228864C896E513BFD11C /* Pods-GISRealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GISRealEstate.release.xcconfig"; path = "Target Support Files/Pods-GISRealEstate/Pods-GISRealEstate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -709,37 +701,9 @@
 		DEBFBB562DFACBD200927EF6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DEBFBB572DFACC6900927EF6 /* TableView */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DEBFBB572DFACC6900927EF6 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				DEBFBB5C2DFACC7D00927EF6 /* Cells */,
-				DEBFBB582DFACC6F00927EF6 /* SettingsTableElement.swift */,
-				DEBFBB5A2DFACC7600927EF6 /* SettingsTableView.swift */,
-			);
-			path = TableView;
-			sourceTree = "<group>";
-		};
-		DEBFBB5C2DFACC7D00927EF6 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				DEBFBB5D2DFACC8000927EF6 /* Links */,
-				DEBFBB622DFACCF200927EF6 /* SettingsHistoryCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		DEBFBB5D2DFACC8000927EF6 /* Links */ = {
-			isa = PBXGroup;
-			children = (
-				DEBFBB5E2DFACC8900927EF6 /* SettingsLinksCell.swift */,
 				DEBFBB602DFACC9000927EF6 /* SettingsLinkButton.swift */,
 			);
-			path = Links;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E85F8A420B1891E0197C8398 /* Frameworks */ = {
@@ -901,7 +865,6 @@
 				DEBFBB292DF9A4C900927EF6 /* RealtyManager.swift in Sources */,
 				DEBFBA622DF975B200927EF6 /* ScreenSize.swift in Sources */,
 				DEBFBA632DF975B200927EF6 /* NumberLaunches.swift in Sources */,
-				DEBFBB592DFACC6F00927EF6 /* SettingsTableElement.swift in Sources */,
 				DEBFBB272DF9A48800927EF6 /* GetRealtyHistoryItemsRequest.swift in Sources */,
 				DEBFBB3E2DF9C45600927EF6 /* SettingsViewController.swift in Sources */,
 				DEBFBA682DF975B200927EF6 /* ChoosePhotoFromGallery.swift in Sources */,
@@ -911,14 +874,12 @@
 				DEBFBA712DF975B200927EF6 /* PaygateProductButton.swift in Sources */,
 				DEBFBA742DF975B200927EF6 /* SplashView.swift in Sources */,
 				DEBFBA7B2DF975B200927EF6 /* Appearance.swift in Sources */,
-				DEBFBB632DFACCF200927EF6 /* SettingsHistoryCell.swift in Sources */,
 				DEBFBA7D2DF975B200927EF6 /* UIApplication+Extension.swift in Sources */,
 				DEBFBA852DF975B200927EF6 /* Currency.swift in Sources */,
 				DEBFBB422DF9C45F00927EF6 /* SettingsView.swift in Sources */,
 				DEBFBB242DF9A35100927EF6 /* Coordinate.swift in Sources */,
 				DE0CC72E2E0AD0CA00379021 /* MapNoLocationAccessView.swift in Sources */,
 				DE0CC7292E0A9BA800379021 /* LocationAuthorizationQuery.swift in Sources */,
-				DEBFBB5B2DFACC7600927EF6 /* SettingsTableView.swift in Sources */,
 				DEBFBA872DF975B200927EF6 /* PaygateInfoCell.swift in Sources */,
 				DEBFBA882DF975B200927EF6 /* UIEdgeInsets+Extension.swift in Sources */,
 				DEBFBA8A2DF975B200927EF6 /* APIRequestBody.swift in Sources */,
@@ -926,7 +887,6 @@
 				DEBFBB332DF9AEF600927EF6 /* MapViewModel.swift in Sources */,
 				DEBFBB2D2DF9A89200927EF6 /* SearchRealtyRequest.swift in Sources */,
 				DEBFBA8B2DF975B200927EF6 /* SplashViewController.swift in Sources */,
-				DEBFBB5F2DFACC8900927EF6 /* SettingsLinksCell.swift in Sources */,
 				DEBFBA902DF975B200927EF6 /* XOREncryption.swift in Sources */,
 				DEBFBB352DF9AEFD00927EF6 /* MapView.swift in Sources */,
 				DEBFBA922DF975B200927EF6 /* Collection+Extension.swift in Sources */,

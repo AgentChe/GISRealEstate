@@ -10,7 +10,6 @@ import RxCocoa
 
 final class SettingsViewModel {
     enum Action {
-        case openHistory
         case openUrl(URL)
     }
 }
@@ -18,41 +17,24 @@ final class SettingsViewModel {
 // MARK: Public
 extension SettingsViewModel {
     struct Input {
-        let didTapHistory: Signal<Void>
         let didTapLink: Signal<SettingsLinkButton.Link>
     }
     
     struct Output {
-        let elements: Driver<[SettingsTableElement]>
         let action: Driver<Action>
     }
     
     func configure(input: Input) -> Output {
         Output(
-            elements: makeElements(),
-            action: makeAction(
-                didTapHistory: input.didTapHistory,
-                didTapLink: input.didTapLink
-            )
+            action: makeAction(didTapLink: input.didTapLink)
         )
     }
 }
 
 // MARK: Private
 private extension SettingsViewModel {
-    func makeElements() -> Driver<[SettingsTableElement]> {
-        .deferred { .just([.history, .links]) }
-    }
-    
-    func makeAction(
-        didTapHistory: Signal<Void>,
-        didTapLink: Signal<SettingsLinkButton.Link>
-    ) -> Driver<Action> {
-        let openHistory = didTapHistory
-            .map { Action.openHistory }
-            .asDriver(onErrorDriveWith: .never())
-        
-        let openUrl = didTapLink
+    func makeAction(didTapLink: Signal<SettingsLinkButton.Link>) -> Driver<Action> {
+        didTapLink
             .map { link -> URL in
                 switch link {
                 case .contactUs:
@@ -65,8 +47,5 @@ private extension SettingsViewModel {
             }
             .map { Action.openUrl($0) }
             .asDriver(onErrorDriveWith: .never())
-        
-        return Driver
-            .merge(openHistory, openUrl)
     }
 }

@@ -17,7 +17,7 @@ final class SettingsLinkButton: UIButton {
     let link: Link
     
     lazy var label = makeLabel()
-    lazy var arrowView = makeArrowView()
+    lazy var separator = makeSeparator()
     
     init(link: Link) {
         self.link = link
@@ -37,7 +37,6 @@ final class SettingsLinkButton: UIButton {
 private extension SettingsLinkButton {
     func initialize() {
         backgroundColor = UIColor.clear
-        layer.masksToBounds = true
     }
 }
 
@@ -46,16 +45,16 @@ private extension SettingsLinkButton {
     func makeConstraints() {
         NSLayoutConstraint.activate([
             label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
-            label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -48.scale),
-            label.topAnchor.constraint(equalTo: topAnchor, constant: 21.scale),
-            label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -21.scale)
+            label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
+            label.topAnchor.constraint(equalTo: topAnchor, constant: 19.5.scale),
+            label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -19.5.scale)
         ])
         
         NSLayoutConstraint.activate([
-            arrowView.widthAnchor.constraint(equalToConstant: 20.scale),
-            arrowView.heightAnchor.constraint(equalToConstant: 20.scale),
-            arrowView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            arrowView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale)
+            separator.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
+            separator.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
+            separator.heightAnchor.constraint(equalToConstant: 1.scale),
+            separator.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 }
@@ -87,10 +86,10 @@ private extension SettingsLinkButton {
         return view
     }
     
-    func makeArrowView() -> UIImageView {
-        let view = UIImageView()
-        view.contentMode = .scaleAspectFit
-        view.image = UIImage(named: "Settings.Arrow")
+    func makeSeparator() -> UIView {
+        let view = UIView()
+        view.isHidden = link == .contactUs
+        view.backgroundColor = Appearance.custom199_203_209.withAlphaComponent(0.5)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
