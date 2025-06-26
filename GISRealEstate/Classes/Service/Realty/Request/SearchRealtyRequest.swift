@@ -33,8 +33,13 @@ struct SearchRealtyRequest: APIRequestBody {
             "anonymous_id": anonymousId,
             "internal_id": internalId,
             "address": address ?? NSNull(),
-            "lat": lat ?? NSNull(),
-            "lon": lon ?? NSNull()
+            "coordinates": {
+                guard let lat, let lon else { return NSNull() }
+                return [
+                    "lat": lat,
+                    "lon": lon
+                ]
+            }()
         ]
     }
 }

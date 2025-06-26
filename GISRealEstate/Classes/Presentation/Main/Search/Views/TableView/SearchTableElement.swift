@@ -20,7 +20,6 @@ struct SearchTableElement {
             if let address = historyItem.address {
                 return address
             } else if let coordinates = historyItem.coordinates {
-                // TODO: проверить формат
                 return String(format: "%.2f, %.2f", coordinates.lat, coordinates.lon)
             }
             
@@ -49,7 +48,6 @@ struct SearchTableElement {
             if let address = favoriteItem.address {
                 return address
             } else if let coordinates = favoriteItem.coordinates {
-                // TODO: проверить формат
                 return String(format: "%.2f, %.2f", coordinates.lat, coordinates.lon)
             }
             
