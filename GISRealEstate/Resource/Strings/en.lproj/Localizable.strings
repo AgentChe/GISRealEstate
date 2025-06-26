@@ -60,9 +60,17 @@
 "Map.NoLocationAccess.Title" = "Enable location?";
 "Map.NoLocationAccess.SubTitle" = "We need your permission to show your position on the map and nearby properties.";
 "Map.NoLocationAccess.OpenSettings" = "Open settings";
+"Map.SearchPlaceholder.Text" = "Type in the address";
 
 // MARK: Settings
 "Settings.Title" = "Menu";
 "Settings.Links.ContactUs" = "Support";
 "Settings.Links.TermsOfUse" = "Terms of use";
 "Settings.Links.PrivacyPolicy" = "Privacy policy";
+
+// MARK: Search
+"Search.PlaceholderText" = "Type in the address";
+"Search.ProposedTab.RecentSearches" = "Recent searches";
+"Search.ProposedTab.Favorites" = "Favorites";
+"Search.Empty.RecentSearches" = "No recent searches";
+"Search.Empty.Favorites" = "No favorites";

@@ -46,7 +46,9 @@ final class MapViewController: UIViewController {
         let output = viewModel.configure(input: MapViewModel.Input(
             didTapSettings: mainView.settingsButton.rx.tap.asSignal(),
             didTapMyGeo: mainView.didTapMyGeo,
-            didTapEnableLocation: mainView.didTapEnableLocation
+            didTapEnableLocation: mainView.didTapEnableLocation,
+            didTapSearch: mainView.searchPlaceholderView.didTapSearch,
+            didSelectCoordinate: mainView.didSelectCoordinate
         ))
         
         output.action
@@ -85,6 +87,11 @@ private extension MapViewController {
         case .enableLocation:
             guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        case .searchManually:
+            let vc = SearchViewController.make()
+            present(vc, animated: true)
+        case .searchCoordinate(let coordinate):
+            break // TODO
         }
     }
     

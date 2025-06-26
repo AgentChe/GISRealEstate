@@ -27,6 +27,16 @@
 		DE0CC7382E0B001600379021 /* RemoveFavoriteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7372E0B001600379021 /* RemoveFavoriteRequest.swift */; };
 		DE0CC73A2E0B00A100379021 /* FavoritesClearRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7392E0B00A100379021 /* FavoritesClearRequest.swift */; };
 		DE0CC73C2E0B00F000379021 /* HistoryClearRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC73B2E0B00F000379021 /* HistoryClearRequest.swift */; };
+		DE0CC7402E0BE35900379021 /* MapSearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC73F2E0BE35900379021 /* MapSearchPlaceholderView.swift */; };
+		DE0CC7432E0C255B00379021 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7422E0C255B00379021 /* SearchViewController.swift */; };
+		DE0CC7452E0C256000379021 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7442E0C256000379021 /* SearchViewModel.swift */; };
+		DE0CC7472E0C256500379021 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7462E0C256500379021 /* SearchView.swift */; };
+		DE0CC74A2E0C272A00379021 /* SearchInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7492E0C272A00379021 /* SearchInputField.swift */; };
+		DE0CC74E2E0C2CBC00379021 /* SearchProposedPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC74D2E0C2CBC00379021 /* SearchProposedPickerView.swift */; };
+		DE0CC7512E0C53BB00379021 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7502E0C53BB00379021 /* SearchTableView.swift */; };
+		DE0CC7532E0C53CF00379021 /* SearchTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7522E0C53CF00379021 /* SearchTableElement.swift */; };
+		DE0CC7552E0C53D800379021 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7542E0C53D800379021 /* SearchTableCell.swift */; };
+		DE0CC7572E0D321600379021 /* SearchEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7562E0D321600379021 /* SearchEmptyView.swift */; };
 		DEBFB8A42DF9748D00927EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB8982DF9748D00927EF6 /* Assets.xcassets */; };
 		DEBFB8A62DF9748D00927EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB89B2DF9748D00927EF6 /* LaunchScreen.storyboard */; };
 		DEBFBA0E2DF975B200927EF6 /* PaygateBestOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB99F2DF975B100927EF6 /* PaygateBestOfferView.swift */; };
@@ -137,6 +147,16 @@
 		DE0CC7372E0B001600379021 /* RemoveFavoriteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFavoriteRequest.swift; sourceTree = "<group>"; };
 		DE0CC7392E0B00A100379021 /* FavoritesClearRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesClearRequest.swift; sourceTree = "<group>"; };
 		DE0CC73B2E0B00F000379021 /* HistoryClearRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryClearRequest.swift; sourceTree = "<group>"; };
+		DE0CC73F2E0BE35900379021 /* MapSearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchPlaceholderView.swift; sourceTree = "<group>"; };
+		DE0CC7422E0C255B00379021 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DE0CC7442E0C256000379021 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		DE0CC7462E0C256500379021 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		DE0CC7492E0C272A00379021 /* SearchInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputField.swift; sourceTree = "<group>"; };
+		DE0CC74D2E0C2CBC00379021 /* SearchProposedPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProposedPickerView.swift; sourceTree = "<group>"; };
+		DE0CC7502E0C53BB00379021 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
+		DE0CC7522E0C53CF00379021 /* SearchTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableElement.swift; sourceTree = "<group>"; };
+		DE0CC7542E0C53D800379021 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
+		DE0CC7562E0D321600379021 /* SearchEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEmptyView.swift; sourceTree = "<group>"; };
 		DEBFB87F2DF9748700927EF6 /* GISRealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GISRealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBFB8982DF9748D00927EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBFB8992DF9748D00927EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -291,8 +311,41 @@
 				DE0CC72B2E0ACB8900379021 /* MapActionButton.swift */,
 				DE0CC72D2E0AD0CA00379021 /* MapNoLocationAccessView.swift */,
 				DE0CC72F2E0AD30600379021 /* MapKitView.swift */,
+				DE0CC73F2E0BE35900379021 /* MapSearchPlaceholderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DE0CC7412E0C254F00379021 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC7482E0C271D00379021 /* Views */,
+				DE0CC7422E0C255B00379021 /* SearchViewController.swift */,
+				DE0CC7442E0C256000379021 /* SearchViewModel.swift */,
+				DE0CC7462E0C256500379021 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DE0CC7482E0C271D00379021 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC74F2E0C53AD00379021 /* TableView */,
+				DE0CC7492E0C272A00379021 /* SearchInputField.swift */,
+				DE0CC74D2E0C2CBC00379021 /* SearchProposedPickerView.swift */,
+				DE0CC7562E0D321600379021 /* SearchEmptyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE0CC74F2E0C53AD00379021 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC7502E0C53BB00379021 /* SearchTableView.swift */,
+				DE0CC7522E0C53CF00379021 /* SearchTableElement.swift */,
+				DE0CC7542E0C53D800379021 /* SearchTableCell.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		DEBFB8762DF9748700927EF6 = {
@@ -679,6 +732,7 @@
 		DEBFBB2E2DF9AEBD00927EF6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DE0CC7412E0C254F00379021 /* Search */,
 				DEBFBB3C2DF9C44C00927EF6 /* Settings */,
 				DEBFBB2F2DF9AEC100927EF6 /* Map */,
 			);
@@ -862,6 +916,7 @@
 				DEBFBA172DF975B200927EF6 /* SessionManager.swift in Sources */,
 				DE0CC7362E0AFFB600379021 /* AddFavoriteRequest.swift in Sources */,
 				DEBFBA1A2DF975B200927EF6 /* TapAreaButton.swift in Sources */,
+				DE0CC74E2E0C2CBC00379021 /* SearchProposedPickerView.swift in Sources */,
 				DEBFBA1C2DF975B200927EF6 /* GradientView.swift in Sources */,
 				DEBFBA1E2DF975B200927EF6 /* RequestResult.swift in Sources */,
 				DEBFBA212DF975B200927EF6 /* SceneDelegate.swift in Sources */,
@@ -869,6 +924,7 @@
 				DE0CC72C2E0ACB8900379021 /* MapActionButton.swift in Sources */,
 				DEBFBA232DF975B200927EF6 /* SignError.swift in Sources */,
 				DEBFBA262DF975B200927EF6 /* UIView+RxExtension.swift in Sources */,
+				DE0CC7432E0C255B00379021 /* SearchViewController.swift in Sources */,
 				DEBFBA272DF975B200927EF6 /* SplashReceiptValidationObserver.swift in Sources */,
 				DEBFBA292DF975B200927EF6 /* NetworkError.swift in Sources */,
 				DEBFBA2B2DF975B200927EF6 /* PaygateViewModel.swift in Sources */,
@@ -880,9 +936,11 @@
 				DE0CC7342E0AFF2300379021 /* GetRealtyFavoriteItemsRequest.swift in Sources */,
 				DEBFBA542DF975B200927EF6 /* ProfileManager.swift in Sources */,
 				DEBFBA562DF975B200927EF6 /* Scalable.swift in Sources */,
+				DE0CC7512E0C53BB00379021 /* SearchTableView.swift in Sources */,
 				DEBFBA5C2DF975B200927EF6 /* Weak.swift in Sources */,
 				DEBFBA5F2DF975B200927EF6 /* RequestReview.swift in Sources */,
 				DEBFBA612DF975B200927EF6 /* AmplitudeManager.swift in Sources */,
+				DE0CC7572E0D321600379021 /* SearchEmptyView.swift in Sources */,
 				DEBFBB292DF9A4C900927EF6 /* RealtyManager.swift in Sources */,
 				DEBFBA622DF975B200927EF6 /* ScreenSize.swift in Sources */,
 				DEBFBA632DF975B200927EF6 /* NumberLaunches.swift in Sources */,
@@ -902,6 +960,7 @@
 				DEBFBB242DF9A35100927EF6 /* Coordinate.swift in Sources */,
 				DE0CC72E2E0AD0CA00379021 /* MapNoLocationAccessView.swift in Sources */,
 				DE0CC7292E0A9BA800379021 /* LocationAuthorizationQuery.swift in Sources */,
+				DE0CC7452E0C256000379021 /* SearchViewModel.swift in Sources */,
 				DEBFBA872DF975B200927EF6 /* PaygateInfoCell.swift in Sources */,
 				DEBFBA882DF975B200927EF6 /* UIEdgeInsets+Extension.swift in Sources */,
 				DEBFBA8A2DF975B200927EF6 /* APIRequestBody.swift in Sources */,
@@ -909,14 +968,17 @@
 				DEBFBB332DF9AEF600927EF6 /* MapViewModel.swift in Sources */,
 				DEBFBB2D2DF9A89200927EF6 /* SearchRealtyRequest.swift in Sources */,
 				DEBFBA8B2DF975B200927EF6 /* SplashViewController.swift in Sources */,
+				DE0CC7552E0C53D800379021 /* SearchTableCell.swift in Sources */,
 				DEBFBA902DF975B200927EF6 /* XOREncryption.swift in Sources */,
 				DEBFBB352DF9AEFD00927EF6 /* MapView.swift in Sources */,
 				DEBFBA922DF975B200927EF6 /* Collection+Extension.swift in Sources */,
 				DEBFBA942DF975B200927EF6 /* UIColor+Extension.swift in Sources */,
 				DEBFBA992DF975B200927EF6 /* PaygateView.swift in Sources */,
+				DE0CC74A2E0C272A00379021 /* SearchInputField.swift in Sources */,
 				DEBFBA9A2DF975B200927EF6 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE0CC73A2E0B00A100379021 /* FavoritesClearRequest.swift in Sources */,
 				DE0CC71E2E09B11C00379021 /* OnboardingViewController.swift in Sources */,
+				DE0CC7402E0BE35900379021 /* MapSearchPlaceholderView.swift in Sources */,
 				DE0CC71F2E09B11C00379021 /* OnboardingView.swift in Sources */,
 				DE0CC7212E09B11C00379021 /* OnstructionView.swift in Sources */,
 				DEBFBAA22DF975B200927EF6 /* ProfileCreateRequest.swift in Sources */,
@@ -942,6 +1004,8 @@
 				DEBFBAE02DF975B200927EF6 /* PaygateInfoView.swift in Sources */,
 				DEBFBAE62DF975B200927EF6 /* PaygateEnableTrialButton.swift in Sources */,
 				DE0CC7322E0AFEA000379021 /* RealtyFavoriteItem.swift in Sources */,
+				DE0CC7532E0C53CF00379021 /* SearchTableElement.swift in Sources */,
+				DE0CC7472E0C256500379021 /* SearchView.swift in Sources */,
 				DEBFBAED2DF975B200927EF6 /* TextAttributes.swift in Sources */,
 				DEBFBAEE2DF975B200927EF6 /* APIFormDataRequestBody.swift in Sources */,
 				DEBFBAF12DF975B200927EF6 /* ObservableRetrySingle.swift in Sources */,

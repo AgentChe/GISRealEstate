@@ -13,6 +13,8 @@ final class MapViewModel {
         case openSettings
         case moveToMyGeo
         case enableLocation
+        case searchManually
+        case searchCoordinate(Coordinate)
     }
 }
 
@@ -22,6 +24,8 @@ extension MapViewModel {
         let didTapSettings: Signal<Void>
         let didTapMyGeo: Signal<Void>
         let didTapEnableLocation: Signal<Void>
+        let didTapSearch: Signal<Void>
+        let didSelectCoordinate: Signal<Coordinate>
     }
     
     struct Output {
@@ -33,7 +37,9 @@ extension MapViewModel {
             action: makeAction(
                 didTapSettings: input.didTapSettings,
                 didTapMyGeo: input.didTapMyGeo,
-                didTapEnableLocation: input.didTapEnableLocation
+                didTapEnableLocation: input.didTapEnableLocation,
+                didTapSearch: input.didTapSearch,
+                didSelectCoordinate: input.didSelectCoordinate
             )
         )
     }
@@ -44,7 +50,9 @@ private extension MapViewModel {
     func makeAction(
         didTapSettings: Signal<Void>,
         didTapMyGeo: Signal<Void>,
-        didTapEnableLocation: Signal<Void>
+        didTapEnableLocation: Signal<Void>,
+        didTapSearch: Signal<Void>,
+        didSelectCoordinate: Signal<Coordinate>
     ) -> Driver<Action> {
         let openSettings = didTapSettings
             .map { Action.openSettings }
@@ -58,7 +66,21 @@ private extension MapViewModel {
             .map { Action.enableLocation }
             .asDriver(onErrorDriveWith: .never())
         
+        let searchManually = didTapSearch
+            .map { Action.searchManually }
+            .asDriver(onErrorDriveWith: .never())
+        
+        let searchCoordinate = didSelectCoordinate
+            .map { Action.searchCoordinate($0) }
+            .asDriver(onErrorDriveWith: .never())
+        
         return Driver
-            .merge(openSettings, moveToMyGeo, enableLocation)
+            .merge(
+                openSettings,
+                moveToMyGeo,
+                enableLocation,
+                searchManually,
+                searchCoordinate
+            )
     }
 }

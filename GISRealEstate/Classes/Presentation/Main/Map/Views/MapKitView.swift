@@ -7,10 +7,16 @@
 
 import UIKit
 import MapKit
+import RxSwift
+import RxCocoa
 
 final class MapKitView: UIView {
     lazy var mapKitView = makeMapKitView()
     lazy var myGeoButton = makeMyGeoButton()
+    
+    private lazy var didSelectCoordinateTrigger = PublishRelay<Coordinate>()
+    
+    private lazy var disposeBag = DisposeBag()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,12 +43,28 @@ extension MapKitView {
         )
         mapKitView.setRegion(region, animated: true)
     }
+    
+    var didSelectCoordinate: Signal<Coordinate> {
+        didSelectCoordinateTrigger.asSignal()
+    }
 }
 
 // MARK: Private
 private extension MapKitView {
     func initialize() {
         backgroundColor = Appearance.main300
+        
+        let tapGesture = UITapGestureRecognizer()
+        mapKitView.addGestureRecognizer(tapGesture)
+        tapGesture.rx.event
+            .bind(to: Binder(self) { base, gesture in
+                let point = gesture.location(in: base.mapKitView)
+                let coord = base.mapKitView.convert(point, toCoordinateFrom: base.mapKitView)
+                let coordinate = Coordinate(lat: coord.latitude, lon: coord.longitude)
+                
+                base.didSelectCoordinateTrigger.accept(coordinate)
+            })
+            .disposed(by: disposeBag)
     }
 }
 

@@ -16,11 +16,13 @@ final class MapView: UIView {
     
     lazy var container = makeContainer()
     lazy var settingsButton = makeSettingsButton()
+    lazy var searchPlaceholderView = makeSearchPlaceholderView()
     
     private var mapKitView: MapKitView?
     
     private lazy var didTapMyGeoTrigger = PublishRelay<Void>()
     private lazy var didTapEnableLocationTrigger = PublishRelay<Void>()
+    private lazy var didSelectCoordinateTrigger = PublishRelay<Coordinate>()
     
     private lazy var disposables = [Disposable]()
     
@@ -50,9 +52,13 @@ extension MapView {
                 let view = MapKitView()
                 mapKitView = view
                 
-                let disposable = view.myGeoButton.rx.tap.asSignal()
+                let myGeoDisposable = view.myGeoButton.rx.tap.asSignal()
                     .emit(to: didTapMyGeoTrigger)
-                disposables.append(disposable)
+                disposables.append(myGeoDisposable)
+                
+                let selectCoordinateDisposable = view.didSelectCoordinate
+                    .emit(to: didSelectCoordinateTrigger)
+                disposables.append(selectCoordinateDisposable)
                 
                 return view
             case .noLocationAccess:
@@ -90,6 +96,10 @@ extension MapView {
     var didTapEnableLocation: Signal<Void> {
         didTapEnableLocationTrigger.asSignal()
     }
+    
+    var didSelectCoordinate: Signal<Coordinate> {
+        didSelectCoordinateTrigger.asSignal()
+    }
 }
 
 // MARK: Private
@@ -115,6 +125,13 @@ private extension MapView {
             settingsButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             settingsButton.topAnchor.constraint(equalTo: topAnchor, constant: 68.scale)
         ])
+        
+        NSLayoutConstraint.activate([
+            searchPlaceholderView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            searchPlaceholderView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            searchPlaceholderView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            searchPlaceholderView.heightAnchor.constraint(equalToConstant: 116.scale)
+        ])
     }
 }
 
@@ -130,6 +147,13 @@ private extension MapView {
     
     func makeSettingsButton() -> MapActionButton {
         let view = MapActionButton(imageName: "Map.Settings")
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
+    func makeSearchPlaceholderView() -> MapSearchPlaceholderView {
+        let view = MapSearchPlaceholderView()
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
