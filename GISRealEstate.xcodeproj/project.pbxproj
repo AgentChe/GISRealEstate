@@ -37,6 +37,19 @@
 		DE0CC7532E0C53CF00379021 /* SearchTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7522E0C53CF00379021 /* SearchTableElement.swift */; };
 		DE0CC7552E0C53D800379021 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7542E0C53D800379021 /* SearchTableCell.swift */; };
 		DE0CC7572E0D321600379021 /* SearchEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7562E0D321600379021 /* SearchEmptyView.swift */; };
+		DE0CC75A2E0E8D9800379021 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7592E0E8D9800379021 /* SearchResultViewController.swift */; };
+		DE0CC75C2E0E8D9D00379021 /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC75B2E0E8D9D00379021 /* SearchResultViewModel.swift */; };
+		DE0CC75E2E0E8DA100379021 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC75D2E0E8DA100379021 /* SearchResultView.swift */; };
+		DE0CC7612E101F9300379021 /* SearchResultHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7602E101F9300379021 /* SearchResultHeaderView.swift */; };
+		DE0CC7632E10414B00379021 /* RealtySearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7622E10414B00379021 /* RealtySearchResult.swift */; };
+		DE0CC7662E1045DC00379021 /* SRSectionsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7652E1045DC00379021 /* SRSectionsCollectionView.swift */; };
+		DE0CC7682E1045E400379021 /* SRSectionsCollectionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7672E1045E400379021 /* SRSectionsCollectionElement.swift */; };
+		DE0CC76A2E1045E900379021 /* SRSectionsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7692E1045E900379021 /* SRSectionsCollectionCell.swift */; };
+		DE0CC76C2E104AD400379021 /* SearchResultEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC76B2E104AD400379021 /* SearchResultEmptyView.swift */; };
+		DE0CC76F2E1050EB00379021 /* SRItemsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC76E2E1050EB00379021 /* SRItemsElement.swift */; };
+		DE0CC7712E12749100379021 /* FavoriteId.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7702E12749100379021 /* FavoriteId.swift */; };
+		DE0CC7732E127AD600379021 /* SRItemsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7722E127AD600379021 /* SRItemsTableView.swift */; };
+		DE0CC7752E127ADC00379021 /* SRItemsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7742E127ADC00379021 /* SRItemsTableCell.swift */; };
 		DEBFB8A42DF9748D00927EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB8982DF9748D00927EF6 /* Assets.xcassets */; };
 		DEBFB8A62DF9748D00927EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB89B2DF9748D00927EF6 /* LaunchScreen.storyboard */; };
 		DEBFBA0E2DF975B200927EF6 /* PaygateBestOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB99F2DF975B100927EF6 /* PaygateBestOfferView.swift */; };
@@ -157,6 +170,19 @@
 		DE0CC7522E0C53CF00379021 /* SearchTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableElement.swift; sourceTree = "<group>"; };
 		DE0CC7542E0C53D800379021 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
 		DE0CC7562E0D321600379021 /* SearchEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEmptyView.swift; sourceTree = "<group>"; };
+		DE0CC7592E0E8D9800379021 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		DE0CC75B2E0E8D9D00379021 /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		DE0CC75D2E0E8DA100379021 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		DE0CC7602E101F9300379021 /* SearchResultHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultHeaderView.swift; sourceTree = "<group>"; };
+		DE0CC7622E10414B00379021 /* RealtySearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtySearchResult.swift; sourceTree = "<group>"; };
+		DE0CC7652E1045DC00379021 /* SRSectionsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSectionsCollectionView.swift; sourceTree = "<group>"; };
+		DE0CC7672E1045E400379021 /* SRSectionsCollectionElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSectionsCollectionElement.swift; sourceTree = "<group>"; };
+		DE0CC7692E1045E900379021 /* SRSectionsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSectionsCollectionCell.swift; sourceTree = "<group>"; };
+		DE0CC76B2E104AD400379021 /* SearchResultEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultEmptyView.swift; sourceTree = "<group>"; };
+		DE0CC76E2E1050EB00379021 /* SRItemsElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRItemsElement.swift; sourceTree = "<group>"; };
+		DE0CC7702E12749100379021 /* FavoriteId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteId.swift; sourceTree = "<group>"; };
+		DE0CC7722E127AD600379021 /* SRItemsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRItemsTableView.swift; sourceTree = "<group>"; };
+		DE0CC7742E127ADC00379021 /* SRItemsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRItemsTableCell.swift; sourceTree = "<group>"; };
 		DEBFB87F2DF9748700927EF6 /* GISRealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GISRealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBFB8982DF9748D00927EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBFB8992DF9748D00927EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -346,6 +372,48 @@
 				DE0CC7542E0C53D800379021 /* SearchTableCell.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE0CC7582E0E8D8800379021 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC75F2E101F8200379021 /* Views */,
+				DE0CC7592E0E8D9800379021 /* SearchResultViewController.swift */,
+				DE0CC75B2E0E8D9D00379021 /* SearchResultViewModel.swift */,
+				DE0CC75D2E0E8DA100379021 /* SearchResultView.swift */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		DE0CC75F2E101F8200379021 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC76D2E1050E200379021 /* Items */,
+				DE0CC7642E10449B00379021 /* Sections */,
+				DE0CC7602E101F9300379021 /* SearchResultHeaderView.swift */,
+				DE0CC76B2E104AD400379021 /* SearchResultEmptyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE0CC7642E10449B00379021 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC7652E1045DC00379021 /* SRSectionsCollectionView.swift */,
+				DE0CC7672E1045E400379021 /* SRSectionsCollectionElement.swift */,
+				DE0CC7692E1045E900379021 /* SRSectionsCollectionCell.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		DE0CC76D2E1050E200379021 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CC76E2E1050EB00379021 /* SRItemsElement.swift */,
+				DE0CC7722E127AD600379021 /* SRItemsTableView.swift */,
+				DE0CC7742E127ADC00379021 /* SRItemsTableCell.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		DEBFB8762DF9748700927EF6 = {
@@ -709,8 +777,10 @@
 				DEBFBB1F2DF9A30100927EF6 /* Page.swift */,
 				DEBFBB232DF9A35100927EF6 /* Coordinate.swift */,
 				DEBFBB212DF9A31100927EF6 /* RealtyHistoryItem.swift */,
+				DE0CC7622E10414B00379021 /* RealtySearchResult.swift */,
 				DEBFBB2A2DF9A59800927EF6 /* RealtySearchResultSection.swift */,
 				DE0CC7312E0AFEA000379021 /* RealtyFavoriteItem.swift */,
+				DE0CC7702E12749100379021 /* FavoriteId.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -732,6 +802,7 @@
 		DEBFBB2E2DF9AEBD00927EF6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DE0CC7582E0E8D8800379021 /* SearchResult */,
 				DE0CC7412E0C254F00379021 /* Search */,
 				DEBFBB3C2DF9C44C00927EF6 /* Settings */,
 				DEBFBB2F2DF9AEC100927EF6 /* Map */,
@@ -920,7 +991,9 @@
 				DEBFBA1C2DF975B200927EF6 /* GradientView.swift in Sources */,
 				DEBFBA1E2DF975B200927EF6 /* RequestResult.swift in Sources */,
 				DEBFBA212DF975B200927EF6 /* SceneDelegate.swift in Sources */,
+				DE0CC7682E1045E400379021 /* SRSectionsCollectionElement.swift in Sources */,
 				DEBFBB312DF9AEEC00927EF6 /* MapViewController.swift in Sources */,
+				DE0CC75A2E0E8D9800379021 /* SearchResultViewController.swift in Sources */,
 				DE0CC72C2E0ACB8900379021 /* MapActionButton.swift in Sources */,
 				DEBFBA232DF975B200927EF6 /* SignError.swift in Sources */,
 				DEBFBA262DF975B200927EF6 /* UIView+RxExtension.swift in Sources */,
@@ -934,6 +1007,7 @@
 				DEBFBA3F2DF975B200927EF6 /* IAPActionResult.swift in Sources */,
 				DEBFBA4C2DF975B200927EF6 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				DE0CC7342E0AFF2300379021 /* GetRealtyFavoriteItemsRequest.swift in Sources */,
+				DE0CC76C2E104AD400379021 /* SearchResultEmptyView.swift in Sources */,
 				DEBFBA542DF975B200927EF6 /* ProfileManager.swift in Sources */,
 				DEBFBA562DF975B200927EF6 /* Scalable.swift in Sources */,
 				DE0CC7512E0C53BB00379021 /* SearchTableView.swift in Sources */,
@@ -948,10 +1022,13 @@
 				DEBFBB3E2DF9C45600927EF6 /* SettingsViewController.swift in Sources */,
 				DEBFBA682DF975B200927EF6 /* ChoosePhotoFromGallery.swift in Sources */,
 				DEBFBA692DF975B200927EF6 /* AppDelegate.swift in Sources */,
+				DE0CC7752E127ADC00379021 /* SRItemsTableCell.swift in Sources */,
 				DEBFBA6D2DF975B200927EF6 /* TryAgainView.swift in Sources */,
+				DE0CC75E2E0E8DA100379021 /* SearchResultView.swift in Sources */,
 				DE0CC7382E0B001600379021 /* RemoveFavoriteRequest.swift in Sources */,
 				DEBFBA702DF975B200927EF6 /* PaddingTextField.swift in Sources */,
 				DEBFBA712DF975B200927EF6 /* PaygateProductButton.swift in Sources */,
+				DE0CC7612E101F9300379021 /* SearchResultHeaderView.swift in Sources */,
 				DEBFBA742DF975B200927EF6 /* SplashView.swift in Sources */,
 				DEBFBA7B2DF975B200927EF6 /* Appearance.swift in Sources */,
 				DEBFBA7D2DF975B200927EF6 /* UIApplication+Extension.swift in Sources */,
@@ -960,6 +1037,8 @@
 				DEBFBB242DF9A35100927EF6 /* Coordinate.swift in Sources */,
 				DE0CC72E2E0AD0CA00379021 /* MapNoLocationAccessView.swift in Sources */,
 				DE0CC7292E0A9BA800379021 /* LocationAuthorizationQuery.swift in Sources */,
+				DE0CC7662E1045DC00379021 /* SRSectionsCollectionView.swift in Sources */,
+				DE0CC76F2E1050EB00379021 /* SRItemsElement.swift in Sources */,
 				DE0CC7452E0C256000379021 /* SearchViewModel.swift in Sources */,
 				DEBFBA872DF975B200927EF6 /* PaygateInfoCell.swift in Sources */,
 				DEBFBA882DF975B200927EF6 /* UIEdgeInsets+Extension.swift in Sources */,
@@ -968,6 +1047,8 @@
 				DEBFBB332DF9AEF600927EF6 /* MapViewModel.swift in Sources */,
 				DEBFBB2D2DF9A89200927EF6 /* SearchRealtyRequest.swift in Sources */,
 				DEBFBA8B2DF975B200927EF6 /* SplashViewController.swift in Sources */,
+				DE0CC7732E127AD600379021 /* SRItemsTableView.swift in Sources */,
+				DE0CC7712E12749100379021 /* FavoriteId.swift in Sources */,
 				DE0CC7552E0C53D800379021 /* SearchTableCell.swift in Sources */,
 				DEBFBA902DF975B200927EF6 /* XOREncryption.swift in Sources */,
 				DEBFBB352DF9AEFD00927EF6 /* MapView.swift in Sources */,
@@ -998,7 +1079,9 @@
 				DEBFBAC72DF975B200927EF6 /* PaygateInteractor.swift in Sources */,
 				DEBFBAC82DF975B200927EF6 /* String+Extension.swift in Sources */,
 				DEBFBACC2DF975B200927EF6 /* IAPErrorHelper.swift in Sources */,
+				DE0CC75C2E0E8D9D00379021 /* SearchResultViewModel.swift in Sources */,
 				DEBFBACE2DF975B200927EF6 /* PaygateActionsView.swift in Sources */,
+				DE0CC76A2E1045E900379021 /* SRSectionsCollectionCell.swift in Sources */,
 				DEBFBAD72DF975B200927EF6 /* RxActivityIndicator.swift in Sources */,
 				DEBFBADF2DF975B200927EF6 /* GlobalDefinitions.swift in Sources */,
 				DEBFBAE02DF975B200927EF6 /* PaygateInfoView.swift in Sources */,
@@ -1012,6 +1095,7 @@
 				DE0CC7262E09B4C000379021 /* OPageIndicatorView.swift in Sources */,
 				DEBFBB222DF9A31100927EF6 /* RealtyHistoryItem.swift in Sources */,
 				DEBFBB2B2DF9A59800927EF6 /* RealtySearchResultSection.swift in Sources */,
+				DE0CC7632E10414B00379021 /* RealtySearchResult.swift in Sources */,
 				DEBFBB612DFACC9000927EF6 /* SettingsLinkButton.swift in Sources */,
 				DEBFBAF62DF975B200927EF6 /* NavigationController.swift in Sources */,
 				DEBFBB202DF9A30100927EF6 /* Page.swift in Sources */,

@@ -74,3 +74,6 @@
 "Search.ProposedTab.Favorites" = "Favorites";
 "Search.Empty.RecentSearches" = "No recent searches";
 "Search.Empty.Favorites" = "No favorites";
+
+// MARK: SearchResult
+"SearchResult.Empty.Text" = "No properties found";

@@ -13,14 +13,14 @@ protocol RealtyManagerProtocol {
         address: String?,
         lat: Double?,
         lon: Double?
-    ) -> Single<[RealtySearchResultSection]>
+    ) -> Single<RealtySearchResult?>
     func obtainFavoriteItems(page: Int) -> Single<Page<[RealtyFavoriteItem]>?>
     func addFavorite(
         address: String?,
         lat: Double?,
         lon: Double?
-    ) -> Single<RequestResult>
-    func deleteFavorite(id: String) -> Single<RequestResult>
+    ) -> Single<FavoriteId?>
+    func deleteFavorite(id: FavoriteId) -> Single<RequestResult>
     func favoritesClear() -> Single<RequestResult>
     func historyClear() -> Single<RequestResult>
 }
@@ -49,7 +49,7 @@ extension RealtyManager: RealtyManagerProtocol {
         address: String? = nil,
         lat: Double? = nil,
         lon: Double? = nil
-    ) -> Single<[RealtySearchResultSection]> {
+    ) -> Single<RealtySearchResult?> {
         let request = SearchRealtyRequest(
             anonymousId: sessionManager.anonymousId,
             internalId: sessionManager.internalId,
@@ -60,7 +60,7 @@ extension RealtyManager: RealtyManagerProtocol {
         
         return restAPITransport
             .callServerApi(requestBody: request)
-            .map { RealtySearchResultSection.map(response: $0) }
+            .map { RealtySearchResult(response: $0) }
     }
     
     func obtainFavoriteItems(page: Int) -> Single<Page<[RealtyFavoriteItem]>?> {
@@ -76,10 +76,10 @@ extension RealtyManager: RealtyManagerProtocol {
     }
     
     func addFavorite(
-        address: String?,
-        lat: Double?,
-        lon: Double?
-    ) -> Single<RequestResult> {
+        address: String? = nil,
+        lat: Double? = nil,
+        lon: Double? = nil
+    ) -> Single<FavoriteId?> {
         let request = AddFavoriteRequest(
             anonymousId: sessionManager.anonymousId,
             internalId: sessionManager.internalId,
@@ -90,14 +90,14 @@ extension RealtyManager: RealtyManagerProtocol {
         
         return restAPITransport
             .callServerApi(requestBody: request)
-            .map { RequestResult.map(response: $0) }
+            .map { FavoriteId(response: $0) }
     }
     
-    func deleteFavorite(id: String) -> Single<RequestResult> {
+    func deleteFavorite(id: FavoriteId) -> Single<RequestResult> {
         let request = RemoveFavoriteRequest(
             anonymousId: sessionManager.anonymousId,
             internalId: sessionManager.internalId,
-            id: id
+            id: id.id
         )
         
         return restAPITransport

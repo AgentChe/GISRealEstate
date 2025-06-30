@@ -91,7 +91,8 @@ private extension MapViewController {
             let vc = SearchViewController.make()
             present(vc, animated: true)
         case .searchCoordinate(let coordinate):
-            break // TODO
+            let vc = SearchResultViewController.make(coordinate: coordinate)
+            present(vc, animated: true)
         }
     }
     

@@ -90,9 +90,11 @@ private extension SearchViewController {
     func action(_ action: SearchViewModel.Action) {
         switch action {
         case .searchAddress(let address):
-            print(address) // TODO
+            let vc = SearchResultViewController.make(address: address)
+            navigationController?.setViewControllers([vc], animated: true)
         case .searchCoordinate(let coordinate):
-            print(coordinate) // TODO
+            let vc = SearchResultViewController.make(coordinate: coordinate)
+            navigationController?.setViewControllers([vc], animated: true)
         }
     }
 }

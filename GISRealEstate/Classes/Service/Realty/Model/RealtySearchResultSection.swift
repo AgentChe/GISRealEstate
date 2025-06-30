@@ -5,17 +5,25 @@
 //  Created by Андрей Чернышев on 11.06.2025.
 //
 
+import Foundation
+
 struct RealtySearchResultSection {
     let title: String
     let items: [String: String]
     let paid: Bool
-    let favorite: Bool
+    let icon: URL
     
     init?(json: [String: Any]) {
         guard
             let title = json["title"] as? String,
             let paid = json["paid"] as? Bool
         else { return nil }
+        
+        let icon: URL? = {
+            guard let iconString = json["icon"] as? String else { return nil }
+            return URL(string: iconString)
+        }()
+        guard let icon else { return nil }
         
         self.title = title
         self.items = {
@@ -34,19 +42,6 @@ struct RealtySearchResultSection {
             return result
         }()
         self.paid = paid
-        self.favorite = json["is_favorite"] as? Bool ?? false
-    }
-}
-
-// MARK: Public
-extension RealtySearchResultSection {
-    static func map(response: Any) -> [RealtySearchResultSection] {
-        guard
-            let json = response as? [String: Any],
-            let body = json["body"] as? [String: Any],
-            let sectionsArray = body["sections"] as? [[String: Any]]
-        else { return [] }
-        
-        return sectionsArray.compactMap { RealtySearchResultSection(json: $0) }
+        self.icon = icon
     }
 }
