@@ -46,6 +46,8 @@ extension MapView {
         disposables.forEach { $0.dispose() }
         disposables = []
         
+        searchPlaceholderView.isHidden = mode != .map
+        
         let view: UIView = {
             switch mode {
             case .map:

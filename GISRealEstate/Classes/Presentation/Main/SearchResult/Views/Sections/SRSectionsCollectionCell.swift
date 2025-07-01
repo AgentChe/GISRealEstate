@@ -50,9 +50,14 @@ extension SRSectionsCollectionCell {
     }
     
     func setup(element: SRSectionsCollectionElement) {
-        // TODO: цвет иконки в зависимости от значения selected
-        iconView.kf.setImage(with: element.section.icon)
-        print("url: \(element.section.icon)") // TODO
+        let iconColor = element.selected ? Appearance.main200 : Appearance.mono200.withAlphaComponent(0.5)
+        iconView.tintColor = iconColor
+        iconView.kf.setImage(with: element.section.icon) { [weak self] result in
+            guard case let .success(value) = result else { return }
+            
+            let templated = value.image.withRenderingMode(.alwaysTemplate)
+            self?.iconView.image = templated
+        }
         
         let attrs = element.selected ? Self.selectedAttrs : Self.deselectedAttrs
         label.attributedText = element.section.title.attributed(with: attrs)
