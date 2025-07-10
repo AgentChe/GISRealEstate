@@ -7,23 +7,22 @@
 
 import Foundation
 
-// TODO
 final class GlobalDefinitions {
     static let domain = "https://realty.korrekted.com"
     static let apiKey = "ldgfhnwluefoqwef"
     
     static let otterScaleHost = "https://api.korrekted.com"
-    static let otterScaleApiKey = "v6yHI2AQpAq7YNYX"
+    static let otterScaleApiKey = "FCOhobiDpN3gdPo4"
     
-    static let applicationTag = "SMART_CLOSET"
-    static let amplitudeApiKey = "fbd4c855690516f00baa6b9d7f032e66"
+    static let applicationTag = "GIS_REAL_ESTATE"
+    static let amplitudeApiKey = "d4ad5c33d23d7a891e9c68de9471f36b"
     
-    static let termsOfServiceUrl = URL(string: "https://camplain-apps.com/terms-of-use.html")!
-    static let privacyPolicyUrl = URL(string: "https://camplain-apps.com/privacy-policy.html")!
-    static let contactUsUrl = URL(string: "https://camplain-apps.com/contacts.html")!
+    static let termsOfServiceUrl = URL(string: "https://appslaunchpad.com/terms")!
+    static let privacyPolicyUrl = URL(string: "https://appslaunchpad.com/policy")!
+    static let contactUsUrl = URL(string: "https://appslaunchpad.com/contact")!
     
     enum Paygate {
-        static let yearly = "navisapps.autocheck.full_report_subs"
-        static let weekly = "navisapps.autocheck.full_report_subs_6"
+        static let yearly = "com.gisrealestate.yearly"
+        static let weekly = "com.gisrealestate.weekly"
     }
 }
