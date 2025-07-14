@@ -64,7 +64,7 @@ private extension OnstructionView {
 private extension OnstructionView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            imageView.heightAnchor.constraint(equalToConstant: 544.scale),
+            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 544.scale : 410.scale),
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             imageView.topAnchor.constraint(equalTo: topAnchor)
@@ -105,7 +105,7 @@ private extension OnstructionView {
         
         let view = UIImageView()
         view.clipsToBounds = true
-        view.contentMode = .scaleToFill
+        view.contentMode = .scaleAspectFill
         view.image = UIImage(named: imageName)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
