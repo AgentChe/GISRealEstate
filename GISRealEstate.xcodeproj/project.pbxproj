@@ -50,7 +50,6 @@
 		DE0CC7712E12749100379021 /* FavoriteId.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7702E12749100379021 /* FavoriteId.swift */; };
 		DE0CC7732E127AD600379021 /* SRItemsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7722E127AD600379021 /* SRItemsTableView.swift */; };
 		DE0CC7752E127ADC00379021 /* SRItemsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7742E127ADC00379021 /* SRItemsTableCell.swift */; };
-		DE18FECC2E27A1D1008F207C /* Test.storekit in Resources */ = {isa = PBXBuildFile; fileRef = DE18FECB2E27A1D1008F207C /* Test.storekit */; };
 		DEBFB8A42DF9748D00927EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB8982DF9748D00927EF6 /* Assets.xcassets */; };
 		DEBFB8A62DF9748D00927EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB89B2DF9748D00927EF6 /* LaunchScreen.storyboard */; };
 		DEBFBA0E2DF975B200927EF6 /* PaygateBestOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB99F2DF975B100927EF6 /* PaygateBestOfferView.swift */; };
@@ -183,7 +182,6 @@
 		DE0CC7702E12749100379021 /* FavoriteId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteId.swift; sourceTree = "<group>"; };
 		DE0CC7722E127AD600379021 /* SRItemsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRItemsTableView.swift; sourceTree = "<group>"; };
 		DE0CC7742E127ADC00379021 /* SRItemsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRItemsTableCell.swift; sourceTree = "<group>"; };
-		DE18FECB2E27A1D1008F207C /* Test.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test.storekit; sourceTree = "<group>"; };
 		DEBFB87F2DF9748700927EF6 /* GISRealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GISRealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBFB8982DF9748D00927EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBFB8992DF9748D00927EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -439,7 +437,6 @@
 			children = (
 				DEBFBA0B2DF975B100927EF6 /* Classes */,
 				DEBFB8A82DF9749600927EF6 /* Resource */,
-				DE18FECB2E27A1D1008F207C /* Test.storekit */,
 			);
 			path = GISRealEstate;
 			sourceTree = "<group>";
@@ -922,7 +919,6 @@
 				DEBFB8A62DF9748D00927EF6 /* LaunchScreen.storyboard in Resources */,
 				DE0CC7062E09814C00379021 /* PublicSans-ExtraBold.ttf in Resources */,
 				DE0CC70C2E09816200379021 /* PublicSans-SemiBold.ttf in Resources */,
-				DE18FECC2E27A1D1008F207C /* Test.storekit in Resources */,
 				DE0CC7082E09815700379021 /* PublicSans-Medium.ttf in Resources */,
 				DE0CC7042E09814600379021 /* PublicSans-Bold.ttf in Resources */,
 				DEBFBB132DF975B800927EF6 /* Localizable.strings in Resources */,
