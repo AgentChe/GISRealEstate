@@ -11,12 +11,6 @@ final class PaygateInfoView: UIView {
     lazy var imageView = makeImageView()
     lazy var label = makeLabel()
     
-    private lazy var infoAttrs = TextAttributes()
-        .textColor(Appearance.mono200)
-        .font(Fonts.PublicSans.regular(size: 14.scale))
-        .lineHeight(20.scale)
-        .textAlignment(.center)
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -25,13 +19,6 @@ final class PaygateInfoView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-}
-
-// MARK: Public
-extension PaygateInfoView {
-    func setup(text: String) {
-        label.attributedText = text.attributed(with: infoAttrs)
     }
 }
 
@@ -68,7 +55,14 @@ private extension PaygateInfoView {
     }
     
     func makeLabel() -> UILabel {
+        let attrs = TextAttributes()
+            .textColor(Appearance.mono200)
+            .font(Fonts.PublicSans.regular(size: 14.scale))
+            .lineHeight(20.scale)
+            .textAlignment(.center)
+        
         let view = UILabel()
+        view.attributedText = "Paygate.CancelAnytime".localized.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

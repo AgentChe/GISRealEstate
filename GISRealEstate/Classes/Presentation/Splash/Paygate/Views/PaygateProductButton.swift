@@ -79,7 +79,7 @@ private extension PaygateProductButton {
                 .textColor(Appearance.mono200)
                 .font(Fonts.PublicSans.bold(size: 16.scale))
                 .lineHeight(22.scale)
-            result.append("Paygate.FreeTrialDays".localized.uppercased().attributed(with: attrs))
+            result.append("Paygate.Monthly".localized.attributed(with: attrs))
         }
         
         leftLabel.attributedText = result
@@ -118,7 +118,7 @@ private extension PaygateProductButton {
                 .textColor(Appearance.mono200)
                 .font(Fonts.PublicSans.medium(size: 14.scale))
                 .lineHeight(20.scale)
-            result.append("Paygate.PerWeek".localized.attributed(with: periodAttrs))
+            result.append("Paygate.PerMonth".localized.attributed(with: periodAttrs))
         }
         
         rigthLabel.attributedText = result

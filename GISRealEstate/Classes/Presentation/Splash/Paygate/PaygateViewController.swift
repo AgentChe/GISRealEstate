@@ -41,25 +41,12 @@ final class PaygateViewController: UIViewController {
         Observable
             .merge(
                 mainView.product1Button.rx.tap.map { (true, false) },
-                mainView.product2Button.rx.tap.map { (false, true) },
-                mainView.enableTrialButton.rx.tap
-                    .compactMap { [weak self] in
-                        let isEnable = self?.mainView.enableTrialButton.isEnable ?? false
-                        let newValue = !isEnable
-                        return (!newValue, newValue)
-                    }
+                mainView.product2Button.rx.tap.map { (false, true) }
             )
             .startWith((false, true))
             .bind(to: Binder(mainView) { base, args in
                 base.product1Button.marked = args.0
                 base.product2Button.marked = args.1
-                base.enableTrialButton.isEnable = args.1
-                
-                let buyTitle = args.0 ? "Paygate.Continue".localized : "Paygate.TryFreeSubscribe".localized
-                base.setup(buyTitle: buyTitle)
-                
-                let info = args.0 ? "Paygate.CancelAnytime".localized : "Paygate.NoPaymentNow".localized
-                base.infoView.setup(text: info.uppercased())
                 
                 base.bestOfferView.update(marked: args.0)
             })
@@ -103,7 +90,7 @@ final class PaygateViewController: UIViewController {
         output.products
             .drive(Binder(mainView) { base, products in
                 base.product1Button.product = products.yearly
-                base.product2Button.product = products.weekly
+                base.product2Button.product = products.monthly
             })
             .disposed(by: disposeBag)
     }
@@ -126,7 +113,6 @@ private extension PaygateViewController {
         [
             mainView.product1Button,
             mainView.product2Button,
-            mainView.enableTrialButton,
             mainView.buyButton,
             mainView.actionsView,
             mainView.closeButton,

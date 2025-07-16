@@ -23,6 +23,6 @@ final class GlobalDefinitions {
     
     enum Paygate {
         static let yearly = "com.gisrealestate.yearly"
-        static let weekly = "com.gisrealestate.weekly"
+        static let monthly = "com.gisrealestate.monthly.nottrial"
     }
 }

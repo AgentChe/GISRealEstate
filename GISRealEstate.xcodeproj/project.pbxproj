@@ -50,6 +50,7 @@
 		DE0CC7712E12749100379021 /* FavoriteId.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7702E12749100379021 /* FavoriteId.swift */; };
 		DE0CC7732E127AD600379021 /* SRItemsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7722E127AD600379021 /* SRItemsTableView.swift */; };
 		DE0CC7752E127ADC00379021 /* SRItemsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CC7742E127ADC00379021 /* SRItemsTableCell.swift */; };
+		DE18FECC2E27A1D1008F207C /* Test.storekit in Resources */ = {isa = PBXBuildFile; fileRef = DE18FECB2E27A1D1008F207C /* Test.storekit */; };
 		DEBFB8A42DF9748D00927EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB8982DF9748D00927EF6 /* Assets.xcassets */; };
 		DEBFB8A62DF9748D00927EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBFB89B2DF9748D00927EF6 /* LaunchScreen.storyboard */; };
 		DEBFBA0E2DF975B200927EF6 /* PaygateBestOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB99F2DF975B100927EF6 /* PaygateBestOfferView.swift */; };
@@ -111,7 +112,6 @@
 		DEBFBAD72DF975B200927EF6 /* RxActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8AD2DF975B100927EF6 /* RxActivityIndicator.swift */; };
 		DEBFBADF2DF975B200927EF6 /* GlobalDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8D72DF975B100927EF6 /* GlobalDefinitions.swift */; };
 		DEBFBAE02DF975B200927EF6 /* PaygateInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB9A22DF975B100927EF6 /* PaygateInfoView.swift */; };
-		DEBFBAE62DF975B200927EF6 /* PaygateEnableTrialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB9A02DF975B100927EF6 /* PaygateEnableTrialButton.swift */; };
 		DEBFBAED2DF975B200927EF6 /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8D12DF975B100927EF6 /* TextAttributes.swift */; };
 		DEBFBAEE2DF975B200927EF6 /* APIFormDataRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8C42DF975B100927EF6 /* APIFormDataRequestBody.swift */; };
 		DEBFBAF12DF975B200927EF6 /* ObservableRetrySingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8CE2DF975B100927EF6 /* ObservableRetrySingle.swift */; };
@@ -183,6 +183,7 @@
 		DE0CC7702E12749100379021 /* FavoriteId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteId.swift; sourceTree = "<group>"; };
 		DE0CC7722E127AD600379021 /* SRItemsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRItemsTableView.swift; sourceTree = "<group>"; };
 		DE0CC7742E127ADC00379021 /* SRItemsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRItemsTableCell.swift; sourceTree = "<group>"; };
+		DE18FECB2E27A1D1008F207C /* Test.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test.storekit; sourceTree = "<group>"; };
 		DEBFB87F2DF9748700927EF6 /* GISRealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GISRealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBFB8982DF9748D00927EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBFB8992DF9748D00927EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -230,7 +231,6 @@
 		DEBFB99C2DF975B100927EF6 /* PaygateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateInteractor.swift; sourceTree = "<group>"; };
 		DEBFB99E2DF975B100927EF6 /* PaygateActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateActionsView.swift; sourceTree = "<group>"; };
 		DEBFB99F2DF975B100927EF6 /* PaygateBestOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateBestOfferView.swift; sourceTree = "<group>"; };
-		DEBFB9A02DF975B100927EF6 /* PaygateEnableTrialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateEnableTrialButton.swift; sourceTree = "<group>"; };
 		DEBFB9A12DF975B100927EF6 /* PaygateInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateInfoCell.swift; sourceTree = "<group>"; };
 		DEBFB9A22DF975B100927EF6 /* PaygateInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateInfoView.swift; sourceTree = "<group>"; };
 		DEBFB9A32DF975B100927EF6 /* PaygateProductButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateProductButton.swift; sourceTree = "<group>"; };
@@ -439,6 +439,7 @@
 			children = (
 				DEBFBA0B2DF975B100927EF6 /* Classes */,
 				DEBFB8A82DF9749600927EF6 /* Resource */,
+				DE18FECB2E27A1D1008F207C /* Test.storekit */,
 			);
 			path = GISRealEstate;
 			sourceTree = "<group>";
@@ -579,7 +580,6 @@
 			children = (
 				DEBFB99E2DF975B100927EF6 /* PaygateActionsView.swift */,
 				DEBFB99F2DF975B100927EF6 /* PaygateBestOfferView.swift */,
-				DEBFB9A02DF975B100927EF6 /* PaygateEnableTrialButton.swift */,
 				DEBFB9A12DF975B100927EF6 /* PaygateInfoCell.swift */,
 				DEBFB9A22DF975B100927EF6 /* PaygateInfoView.swift */,
 				DEBFB9A32DF975B100927EF6 /* PaygateProductButton.swift */,
@@ -922,6 +922,7 @@
 				DEBFB8A62DF9748D00927EF6 /* LaunchScreen.storyboard in Resources */,
 				DE0CC7062E09814C00379021 /* PublicSans-ExtraBold.ttf in Resources */,
 				DE0CC70C2E09816200379021 /* PublicSans-SemiBold.ttf in Resources */,
+				DE18FECC2E27A1D1008F207C /* Test.storekit in Resources */,
 				DE0CC7082E09815700379021 /* PublicSans-Medium.ttf in Resources */,
 				DE0CC7042E09814600379021 /* PublicSans-Bold.ttf in Resources */,
 				DEBFBB132DF975B800927EF6 /* Localizable.strings in Resources */,
@@ -1085,7 +1086,6 @@
 				DEBFBAD72DF975B200927EF6 /* RxActivityIndicator.swift in Sources */,
 				DEBFBADF2DF975B200927EF6 /* GlobalDefinitions.swift in Sources */,
 				DEBFBAE02DF975B200927EF6 /* PaygateInfoView.swift in Sources */,
-				DEBFBAE62DF975B200927EF6 /* PaygateEnableTrialButton.swift in Sources */,
 				DE0CC7322E0AFEA000379021 /* RealtyFavoriteItem.swift in Sources */,
 				DE0CC7532E0C53CF00379021 /* SearchTableElement.swift in Sources */,
 				DE0CC7472E0C256500379021 /* SearchView.swift in Sources */,
@@ -1136,13 +1136,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4X5YS65338;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GISRealEstate/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "GIS Real Estate";
+				INFOPLIST_KEY_CFBundleDisplayName = "Property Lines";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We will show you where you are to help you choose a place for your property";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -1153,7 +1153,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gisrealestate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1177,13 +1177,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4X5YS65338;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GISRealEstate/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "GIS Real Estate";
+				INFOPLIST_KEY_CFBundleDisplayName = "Property Lines";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We will show you where you are to help you choose a place for your property";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -1194,7 +1194,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gisrealestate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

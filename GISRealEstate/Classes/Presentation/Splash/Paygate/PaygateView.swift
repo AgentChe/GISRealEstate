@@ -17,15 +17,10 @@ final class PaygateView: UIView {
     lazy var product1Button = makeProductButton()
     lazy var product2Button = makeProductButton()
     lazy var bestOfferView = makeBestOfferView()
-    lazy var enableTrialButton = makeEnableTrialButton()
     lazy var buyButton = makeBuyButton()
     lazy var infoView = makeInfoView()
     lazy var actionsView = makeActionsView()
     lazy var preloader = makePreloader()
-    
-    private lazy var buyAttrs = TextAttributes()
-        .textColor(Appearance.mono100)
-        .font(Fonts.PublicSans.medium(size: 18.scale))
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,13 +31,6 @@ final class PaygateView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-}
-
-// MARK: Public
-extension PaygateView {
-    func setup(buyTitle: String) {
-        buyButton.setAttributedTitle(buyTitle.attributed(with: buyAttrs), for: .normal)
     }
 }
 
@@ -95,16 +83,9 @@ private extension PaygateView {
         ])
         
         NSLayoutConstraint.activate([
-            enableTrialButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
-            enableTrialButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            enableTrialButton.topAnchor.constraint(equalTo: cell3.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 16.scale : 12.scale),
-            enableTrialButton.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 66.scale : 60.scale)
-        ])
-        
-        NSLayoutConstraint.activate([
             product1Button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             product1Button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            product1Button.topAnchor.constraint(equalTo: enableTrialButton.bottomAnchor, constant: 16.scale),
+            product1Button.topAnchor.constraint(equalTo: cell3.bottomAnchor, constant: 16.scale),
             product1Button.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 70.scale : 58.scale)
         ])
         
@@ -185,13 +166,6 @@ private extension PaygateView {
         return view
     }
     
-    func makeEnableTrialButton() -> PaygateEnableTrialButton {
-        let view = PaygateEnableTrialButton()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(view)
-        return view
-    }
-    
     func makeProductButton() -> PaygateProductButton {
         let view = PaygateProductButton()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -207,7 +181,12 @@ private extension PaygateView {
     }
     
     func makeBuyButton() -> UIButton {
+        let attrs = TextAttributes()
+            .textColor(Appearance.mono100)
+            .font(Fonts.PublicSans.medium(size: 18.scale))
+        
         let view = UIButton()
+        view.setAttributedTitle("Continue".localized.attributed(with: attrs), for: .normal)
         view.layer.cornerRadius = 8.scale
         view.backgroundColor = Appearance.main100
         view.translatesAutoresizingMaskIntoConstraints = false
