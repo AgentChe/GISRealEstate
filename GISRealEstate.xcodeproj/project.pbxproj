@@ -135,6 +135,7 @@
 		DEBFBB402DF9C45B00927EF6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB3F2DF9C45B00927EF6 /* SettingsViewModel.swift */; };
 		DEBFBB422DF9C45F00927EF6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB412DF9C45F00927EF6 /* SettingsView.swift */; };
 		DEBFBB612DFACC9000927EF6 /* SettingsLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBB602DFACC9000927EF6 /* SettingsLinkButton.swift */; };
+		DECC9E5F2E3CE45E0039B5A1 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECC9E5E2E3CE45E0039B5A1 /* FacebookManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -269,6 +270,7 @@
 		DEBFBB3F2DF9C45B00927EF6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		DEBFBB412DF9C45F00927EF6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DEBFBB602DFACC9000927EF6 /* SettingsLinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinkButton.swift; sourceTree = "<group>"; };
+		DECC9E5E2E3CE45E0039B5A1 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		E1D6228864C896E513BFD11C /* Pods-GISRealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GISRealEstate.release.xcconfig"; path = "Target Support Files/Pods-GISRealEstate/Pods-GISRealEstate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -457,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBFB8A92DF975B100927EF6 /* AmplitudeManager.swift */,
+				DECC9E5E2E3CE45E0039B5A1 /* FacebookManager.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -1096,6 +1099,7 @@
 				DEBFBAF62DF975B200927EF6 /* NavigationController.swift in Sources */,
 				DEBFBB202DF9A30100927EF6 /* Page.swift in Sources */,
 				DEBFBAFA2DF975B200927EF6 /* PurchaseValidationObserver.swift in Sources */,
+				DECC9E5F2E3CE45E0039B5A1 /* FacebookManager.swift in Sources */,
 				DEBFBB022DF975B200927EF6 /* Fonts.swift in Sources */,
 				DEBFBB052DF975B200927EF6 /* SplashViewModel.swift in Sources */,
 			);
@@ -1132,7 +1136,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4X5YS65338;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1149,7 +1153,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gisrealestate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1173,7 +1177,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4X5YS65338;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1190,7 +1194,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gisrealestate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

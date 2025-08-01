@@ -12,7 +12,21 @@
 				<string>gisrealestate</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb2090354018122828</string>
+			</array>
+		</dict>
 	</array>
+	<key>FacebookAppID</key>
+	<string>2090354018122828</string>
+	<key>FacebookClientToken</key>
+	<string>40243e7434d9b8da6641fe53d029d8bb</string>
+	<key>FacebookDisplayName</key>
+	<string>GIS Real Estate</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
