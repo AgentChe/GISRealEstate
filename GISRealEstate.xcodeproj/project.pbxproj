@@ -72,7 +72,6 @@
 		DEBFBA562DF975B200927EF6 /* Scalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8CF2DF975B100927EF6 /* Scalable.swift */; };
 		DEBFBA5C2DF975B200927EF6 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8D22DF975B100927EF6 /* Weak.swift */; };
 		DEBFBA5F2DF975B200927EF6 /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8AC2DF975B100927EF6 /* RequestReview.swift */; };
-		DEBFBA612DF975B200927EF6 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8A92DF975B100927EF6 /* AmplitudeManager.swift */; };
 		DEBFBA622DF975B200927EF6 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8D02DF975B100927EF6 /* ScreenSize.swift */; };
 		DEBFBA632DF975B200927EF6 /* NumberLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8CD2DF975B100927EF6 /* NumberLaunches.swift */; };
 		DEBFBA682DF975B200927EF6 /* ChoosePhotoFromGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFB8AB2DF975B100927EF6 /* ChoosePhotoFromGallery.swift */; };
@@ -187,7 +186,6 @@
 		DEBFB8982DF9748D00927EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBFB8992DF9748D00927EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBFB89A2DF9748D00927EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DEBFB8A92DF975B100927EF6 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
 		DEBFB8AB2DF975B100927EF6 /* ChoosePhotoFromGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePhotoFromGallery.swift; sourceTree = "<group>"; };
 		DEBFB8AC2DF975B100927EF6 /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DEBFB8AD2DF975B100927EF6 /* RxActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
@@ -458,7 +456,6 @@
 		DEBFB8AA2DF975B100927EF6 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				DEBFB8A92DF975B100927EF6 /* AmplitudeManager.swift */,
 				DECC9E5E2E3CE45E0039B5A1 /* FacebookManager.swift */,
 			);
 			path = Analytics;
@@ -1013,7 +1010,6 @@
 				DE0CC7512E0C53BB00379021 /* SearchTableView.swift in Sources */,
 				DEBFBA5C2DF975B200927EF6 /* Weak.swift in Sources */,
 				DEBFBA5F2DF975B200927EF6 /* RequestReview.swift in Sources */,
-				DEBFBA612DF975B200927EF6 /* AmplitudeManager.swift in Sources */,
 				DE0CC7572E0D321600379021 /* SearchEmptyView.swift in Sources */,
 				DEBFBB292DF9A4C900927EF6 /* RealtyManager.swift in Sources */,
 				DEBFBA622DF975B200927EF6 /* ScreenSize.swift in Sources */,
@@ -1136,7 +1132,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4X5YS65338;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1153,7 +1149,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gisrealestate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1177,7 +1173,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4X5YS65338;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1194,7 +1190,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gisrealestate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
